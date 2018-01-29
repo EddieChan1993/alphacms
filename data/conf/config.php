@@ -2,15 +2,18 @@
 return [
     'app_debug' =>true,
     //异常页面,调试模式关闭的时候显示模板
-    'exception_tmpl'         => ROOT_PATH.'public'.DS.'admin/alpha/404.html',
+    //路由找不到获取逻辑错误都会跳转到这个页面
+    'exception_tmpl'         => ROOT_PATH.'public'.DS.'admin/alpha/pages-error-404-2.html',
     // 关闭URL中控制器和操作名的自动转换
     'url_convert'    =>  false,
     // 默认模块名,控制器
     'default_module' => 'admin',
     'default_controller' => 'core.Index',
-
-    //自定义日志文件
-    'log_path'     => './data/runtime/log/',
+    //系统日志
+    'log'   => [
+        //日志保存目录
+        'path' =>  RUNTIME_PATH.'log'.DS.'system'.DS,
+    ],
     // 视图输出字符串内容替换
     'view_replace_str' => [
         '__ROOT__' => $basename,
