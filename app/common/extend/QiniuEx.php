@@ -6,6 +6,8 @@ use Qiniu\Config;
 use Qiniu\Storage\BucketManager;
 use Qiniu\Storage\UploadManager;
 use think\Exception;
+use think\cache\driver\Memcache;
+;
 
 class QiniuEx
 {
@@ -36,7 +38,21 @@ class QiniuEx
     //获取token
     public function getToken()
     {
-        return $this->qiniuApi->uploadToken(self::$bucket);
+        if (!extension_loaded('memcache')) {
+            //没装缓存
+            $token=$this->qiniuApi->uploadToken(self::$bucket);
+        }else{
+            $expires = 3600;//一个小时
+            $memcache = new Memcache();
+            $key = 'qiniu_token';
+            if ($memcache->get($key)) {
+                $token = $memcache->get($key);
+            }else{
+                $token=$this->qiniuApi->uploadToken(self::$bucket);
+                $memcache->set($key, $token,$expires);
+            }
+        }
+        return $token;
     }
 
     /**

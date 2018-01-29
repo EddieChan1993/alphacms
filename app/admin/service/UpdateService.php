@@ -85,6 +85,10 @@ class UpdateService extends BaseServer
         $flag = false;
         Db::startTrans();
         try {
+            $res=Db::name('imgs')->delete($id);
+            if (!$res) {
+                throw new Exception("数据库文件删除失败");
+            }
             if ($type == 1) {
                 //如果是七牛图片
                 $urlArr = parse_url($file_path);
@@ -99,10 +103,6 @@ class UpdateService extends BaseServer
                 if (count(glob($path))) {
                     throw new Exception("文件删除失败");
                 }
-            }
-            $res=Db::name('imgs')->delete($id);
-            if (!$res) {
-                throw new Exception("数据库文件删除失败");
             }
             Db::commit();
             $flag = true;
