@@ -9029,3 +9029,639 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.005021s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_widgets` LIMIT 1 [ RunTime:0.000214s ]
 [ sql ] [ SQL ] SELECT * FROM `edd_widgets` ORDER BY wid_date desc [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:17+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Index/index.html
+[ info ] 127.0.0.15/admin/core.Index/index.html [运行时间：0.079237s][吞吐率：12.62req/s] [内存消耗：2,512.54kb] [文件加载：64]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=6ykYD',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Index->index[ E:\alphaCMS\app\admin\controller\core\Index.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\Public\base.html [ array (
+  0 => 'self',
+  1 => 'role_name',
+  2 => 'menuAuth',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000968s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.006132s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.004732s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `type` = 0  AND `status` = 1 ORDER BY listorder desc [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT `module`,`controller`,`method` FROM `edd_menu` WHERE  `id` = 217 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.005162s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:17+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Admin/home_page.html
+[ info ] 127.0.0.15/admin/core.Admin/home_page.html [运行时间：0.053356s][吞吐率：18.74req/s] [内存消耗：2,459.55kb] [文件加载：64]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Admin',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=yZ54h',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Admin/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Admin->home_page[ E:\alphaCMS\app\admin\controller\core\Admin.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\admin\home_page.html [ array (
+  0 => 'title',
+  1 => 'tab_1',
+  2 => 'tab_2',
+  3 => 'dataArr',
+  4 => 'pages',
+  5 => 'dataNums',
+  6 => 'get',
+  7 => 'role_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.005829s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_users` LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role` [ RunTime:0.006451s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role` ORDER BY create_time desc [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = 1 LIMIT 1 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:18+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/Index/get_php_ext.html
+[ info ] 127.0.0.15/admin/Index/get_php_ext.html [运行时间：0.025962s][吞吐率：38.52req/s] [内存消耗：1,279.76kb] [文件加载：43]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'get_php_ext',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=Mefjv',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Index/get_php_ext_html' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-29T12:02:19+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Role/home_page.html
+[ info ] 127.0.0.15/admin/core.Role/home_page.html [运行时间：0.061675s][吞吐率：16.21req/s] [内存消耗：2,441.32kb] [文件加载：64]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Role',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=Mefjv',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Role/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Role->home_page[ E:\alphaCMS\app\admin\controller\core\Role.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\role\home_page.html [ array (
+  0 => 'title',
+  1 => 'tab_1',
+  2 => 'tab_2',
+  3 => 'dataArr',
+  4 => 'pages',
+  5 => 'dataNums',
+  6 => 'get',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001242s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.005784s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role` [ RunTime:0.007980s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_role` LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000233s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:20+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Menu/home_page.html
+[ info ] 127.0.0.15/admin/core.Menu/home_page.html [运行时间：0.058730s][吞吐率：17.03req/s] [内存消耗：2,519.63kb] [文件加载：63]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Menu',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=pUTWW',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Menu/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Menu->home_page[ E:\alphaCMS\app\admin\controller\core\Menu.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\menu\home_page.html [ array (
+  0 => 'menu_nums',
+  1 => 'menu_list',
+  2 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000762s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.004743s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.004730s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_menu` LIMIT 1 [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:21+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Imgs/home_page.html
+[ info ] 127.0.0.15/admin/core.Imgs/home_page.html [运行时间：0.091843s][吞吐率：10.89req/s] [内存消耗：2,431.12kb] [文件加载：64]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Imgs',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=%3DzoUI',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Imgs/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Imgs->home_page[ E:\alphaCMS\app\admin\controller\core\Imgs.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\imgs\home_page.html [ array (
+  0 => 'title',
+  1 => 'panel_title',
+  2 => 'dataArr',
+  3 => 'pages',
+  4 => 'dataNums',
+  5 => 'get',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002741s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.006255s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_imgs` [ RunTime:0.006380s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_imgs` LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_imgs` ORDER BY id desc LIMIT 0,20 [ RunTime:0.001860s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:22+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Setting/plugins_home.html
+[ info ] 127.0.0.15/admin/core.Setting/plugins_home.html [运行时间：0.078197s][吞吐率：12.79req/s] [内存消耗：2,437.86kb] [文件加载：63]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Setting',
+    2 => 'plugins_home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=NbbCi',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Setting/plugins_home_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Setting->plugins_home[ E:\alphaCMS\app\admin\controller\core\Setting.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\setting\plugins_home.html [ array (
+  0 => 'widget',
+  1 => 'widgetsNums',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000675s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.009627s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_widgets` [ RunTime:0.008635s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_widgets` LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_widgets` ORDER BY wid_date desc [ RunTime:0.000687s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:23+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Setting/home_page.html
+[ info ] 127.0.0.15/admin/core.Setting/home_page.html [运行时间：0.078313s][吞吐率：12.77req/s] [内存消耗：2,420.18kb] [文件加载：63]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Setting',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=juy%3DQ',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Setting/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Setting->home_page[ E:\alphaCMS\app\admin\controller\core\Setting.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\setting\home_page.html [ array (
+  0 => 'site_name',
+  1 => 'site_addr',
+  2 => 'site_admin_email',
+  3 => 'tel',
+  4 => 'icp',
+  5 => 'site_copyright',
+  6 => 'is_close',
+  7 => 'seo_title',
+  8 => 'seo_key',
+  9 => 'seo_remark',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000505s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.007466s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.005182s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_options` WHERE  `option_id` = 7 LIMIT 1 [ RunTime:0.000564s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:23+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Dblist/home_page.html
+[ info ] 127.0.0.15/admin/core.Dblist/home_page.html [运行时间：0.076296s][吞吐率：13.11req/s] [内存消耗：2,469.73kb] [文件加载：63]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Dblist',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=Pb1Bl',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Dblist/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Dblist->home_page[ E:\alphaCMS\app\admin\controller\core\Dblist.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\dblist\home_page.html [ array (
+  0 => 'sql_list',
+  1 => 'sql_file',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000563s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.009093s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001392s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS FROM alphacms [ RunTime:0.002968s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:24+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Setting/home_page.html
+[ info ] 127.0.0.15/admin/core.Setting/home_page.html [运行时间：0.093208s][吞吐率：10.73req/s] [内存消耗：2,420.16kb] [文件加载：63]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Setting',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=doEZK',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Setting/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Setting->home_page[ E:\alphaCMS\app\admin\controller\core\Setting.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\setting\home_page.html [ array (
+  0 => 'site_name',
+  1 => 'site_addr',
+  2 => 'site_admin_email',
+  3 => 'tel',
+  4 => 'icp',
+  5 => 'site_copyright',
+  6 => 'is_close',
+  7 => 'seo_title',
+  8 => 'seo_key',
+  9 => 'seo_remark',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001343s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.013341s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.010608s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_options` WHERE  `option_id` = 7 LIMIT 1 [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:25+08:00 ] 127.0.0.15 127.0.0.1 POST /admin/core.Setting/save_sites.html
+[ info ] 127.0.0.15/admin/core.Setting/save_sites.html [运行时间：0.110464s][吞吐率：9.05req/s] [内存消耗：2,376.81kb] [文件加载：65]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Setting',
+    2 => 'save_sites',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=gLO5-',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Setting/home_page.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.15',
+  'accept' => '*/*',
+  'content-length' => '192',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Setting/save_sites_html' => '',
+  'option_value' => 
+  array (
+    'site_name' => 'AlphaCMS',
+    'site_addr' => '',
+    'site_admin_email' => '',
+    'tel' => '',
+    'icp' => '',
+    'site_copyright' => '',
+  ),
+  'is_close' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Setting->save_sites[ E:\alphaCMS\app\admin\controller\core\Setting.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.007017s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.005693s ]
+[ sql ] [ SQL ] UPDATE `edd_options`  SET `option_value`='{\"site_name\":\"AlphaCMS\",\"site_addr\":\"\",\"site_admin_email\":\"\",\"tel\":\"\",\"icp\":\"\",\"site_copyright\":\"\"}',`is_close`=1  WHERE  `option_id` = 6 [ RunTime:0.038160s ]
+---------------------------------------------------------------
+[ 2018-01-29T12:02:28+08:00 ] 127.0.0.15 127.0.0.1 GET /admin/core.Posts/home_page_posts.html
+[ info ] 127.0.0.15/admin/core.Posts/home_page_posts.html [运行时间：0.063768s][吞吐率：15.68req/s] [内存消耗：2,480.84kb] [文件加载：64]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Posts',
+    2 => 'home_page_posts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=6ykYD',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/admin/core.Index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Posts/home_page_posts_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Posts->home_page_posts[ E:\alphaCMS\app\admin\controller\core\Posts.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\posts\home_page_posts.html [ array (
+  0 => 'title',
+  1 => 'tab_1',
+  2 => 'tab_2',
+  3 => 'dataArr',
+  4 => 'pages',
+  5 => 'dataNums',
+  6 => 'get',
+  7 => 'termsList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000616s ] mysql:dbname=alphacms;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.005015s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_posts` [ RunTime:0.006071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_posts` LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT `id`,`post_author`,`post_keywords`,`post_source`,`post_date`,`post_title`,`post_excerpt`,`post_status`,`comment_status`,`post_modified`,`post_content_filtered`,`post_parent`,`post_type`,`post_mime_type`,`comment_count`,`smeta`,`post_hits`,`post_like`,`istop`,`recommended` FROM `edd_posts` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_terms` [ RunTime:0.004880s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_terms` [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_terms` `t` INNER JOIN `edd_term_relationships` `r` ON `r`.`term_id`=`t`.`term_id` WHERE  `object_id` = 6 [ RunTime:0.000426s ]
