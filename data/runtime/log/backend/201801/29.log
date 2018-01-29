@@ -1,0 +1,167 @@
+---------------------------------------------------------------
+[ 2018-01-29T14:33:33+08:00 ] 127.0.0.1 GET /
+[ info ] 127.0.0.15/ [运行时间：0.101032s][吞吐率：9.90req/s] [内存消耗：2,709.47kb] [文件加载：66]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=KbYBh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Index->index[ E:\alphaCMS\app\admin\controller\core\Index.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\Public\base.html [ array (
+  0 => 'self',
+  1 => 'role_name',
+  2 => 'menuAuth',
+  3 => 'url',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001172s ] mysql:host=127.0.0.1;port=3306;dbname=alphacms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.006808s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_menu` [ RunTime:0.005943s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_menu` WHERE  `type` = 0  AND `status` = 1 ORDER BY listorder desc [ RunTime:0.001044s ]
+[ sql ] [ SQL ] SELECT `module`,`controller`,`method` FROM `edd_menu` WHERE  `id` = 217 LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_options` [ RunTime:0.006082s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `edd_options` WHERE  `option_id` = 6 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT `r`.`nav_list` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = '1' LIMIT 1 [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-01-29T14:33:33+08:00 ] 127.0.0.1 GET /admin/core.Admin/home_page.html
+[ info ] 127.0.0.15/admin/core.Admin/home_page.html [运行时间：0.055941s][吞吐率：17.88req/s] [内存消耗：2,683.23kb] [文件加载：66]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'core.Admin',
+    2 => 'home_page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=YqpQv',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/core_Admin/home_page_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\core\Admin->home_page[ E:\alphaCMS\app\admin\controller\core\Admin.php ]
+[ info ] [ VIEW ] E:\alphaCMS/app/admin\view\core\admin\home_page.html [ array (
+  0 => 'title',
+  1 => 'tab_1',
+  2 => 'tab_2',
+  3 => 'dataArr',
+  4 => 'pages',
+  5 => 'dataNums',
+  6 => 'get',
+  7 => 'role_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000518s ] mysql:host=127.0.0.1;port=3306;dbname=alphacms;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_users` [ RunTime:0.005138s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `edd_users` LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_users` ORDER BY id desc LIMIT 0,20 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `edd_role` [ RunTime:0.005589s ]
+[ sql ] [ SQL ] SELECT * FROM `edd_role` ORDER BY create_time desc [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT `name` FROM `edd_users` `u` INNER JOIN `edd_role_user` `ra` ON `ra`.`user_id`=`u`.`id` INNER JOIN `edd_role` `r` ON `r`.`id`=`ra`.`role_id` WHERE  `ra`.`user_id` = 1 LIMIT 1 [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2018-01-29T14:33:34+08:00 ] 127.0.0.1 GET /admin/Index/get_php_ext.html
+[ info ] 127.0.0.15/admin/Index/get_php_ext.html [运行时间：0.022101s][吞吐率：45.25req/s] [内存消耗：1,309.94kb] [文件加载：44]
+[ info ] [ LANG ] E:\alphaCMS\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'get_php_ext',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ur14qvnlhojfih4d6ho69u8ea8; UID=mtVaW',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.15/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.15',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Index/get_php_ext_html' => '',
+)
+[ info ] [ LOG ] INIT File
