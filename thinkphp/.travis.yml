@@ -7,7 +7,7 @@ services:
   - mongodb
   - mysql
   - postgresql
-  - redis-service
+  - redis-server
 
 matrix:
   fast_finish: true

@@ -102,7 +102,7 @@ class Definition
         }
 
         if ($argument->isRequired() && $this->hasOptional) {
-            throw new \LogicException('Cannot add a required argument after an optional core.');
+            throw new \LogicException('Cannot add a required argument after an optional one.');
         }
 
         if ($argument->isArray()) {

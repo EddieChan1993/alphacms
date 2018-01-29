@@ -2,7 +2,7 @@
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK ]
 // +----------------------------------------------------------------------
-// | Copyright (c) 2006~2017 http://thinkphp.cn All rights reserved.
+// | Copyright (c) 2006~2018 http://thinkphp.cn All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
@@ -12,7 +12,6 @@
 namespace think\cache\driver;
 
 use think\cache\Driver;
-use think\Exception;
 
 class Memcache extends Driver
 {
@@ -33,29 +32,27 @@ class Memcache extends Driver
      */
     public function __construct($options = [])
     {
-            if (!extension_loaded('memcache')) {
-                throw new \BadFunctionCallException('not support: memcache');
-            }
-            if (!empty($options)) {
-                $this->options = array_merge($this->options, $options);
-            }
-            $this->handler = new \Memcache;
-            // 支持集群
-            $hosts = explode(',', $this->options['host']);
-            $ports = explode(',', $this->options['port']);
-            if (empty($ports[0])) {
-                $ports[0] = 11211;
-            }
-            // 建立连接
-            foreach ((array) $hosts as $i => $host) {
-                $port = isset($ports[$i]) ? $ports[$i] : $ports[0];
-                $this->options['timeout'] > 0 ?
-                    $this->handler->addServer($host, $port, $this->options['persistent'], 1, $this->options['timeout']) :
-                    $this->handler->addServer($host, $port, $this->options['persistent'], 1);
-            }
+        if (!extension_loaded('memcache')) {
+            throw new \BadFunctionCallException('not support: memcache');
+        }
+        if (!empty($options)) {
+            $this->options = array_merge($this->options, $options);
+        }
+        $this->handler = new \Memcache;
+        // 支持集群
+        $hosts = explode(',', $this->options['host']);
+        $ports = explode(',', $this->options['port']);
+        if (empty($ports[0])) {
+            $ports[0] = 11211;
+        }
+        // 建立连接
+        foreach ((array) $hosts as $i => $host) {
+            $port = isset($ports[$i]) ? $ports[$i] : $ports[0];
+            $this->options['timeout'] > 0 ?
+            $this->handler->addServer($host, $port, $this->options['persistent'], 1, $this->options['timeout']) :
+            $this->handler->addServer($host, $port, $this->options['persistent'], 1);
+        }
     }
-
-
 
     /**
      * 判断缓存
@@ -85,15 +82,18 @@ class Memcache extends Driver
     /**
      * 写入缓存
      * @access public
-     * @param string    $name 缓存变量名
-     * @param mixed     $value  存储数据
-     * @param integer   $expire  有效时间（秒）
+     * @param string            $name 缓存变量名
+     * @param mixed             $value  存储数据
+     * @param integer|\DateTime $expire  有效时间（秒）
      * @return bool
      */
     public function set($name, $value, $expire = null)
     {
         if (is_null($expire)) {
             $expire = $this->options['expire'];
+        }
+        if ($expire instanceof \DateTime) {
+            $expire = $expire->getTimestamp() - time();
         }
         if ($this->tag && !$this->has($name)) {
             $first = true;

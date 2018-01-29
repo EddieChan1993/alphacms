@@ -91,7 +91,7 @@ class Process
         138 => 'User-defined 1',
         139 => 'Segmentation violation',
         140 => 'User-defined 2',
-        141 => 'Write to pipe with no core reading',
+        141 => 'Write to pipe with no one reading',
         142 => 'Signal raised by alarm',
         143 => 'Termination (request to terminate)',
         // 144 - not defined
