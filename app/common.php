@@ -281,42 +281,41 @@ function ajax_return($data = [], $msg = "", $code = 0, $extend = [])
  * @param int $time
  * @return string 时间差值
  */
-function tranTime($time, $format = '1')
+function tranTime($timeInt, $format = 'Y-m-d H:i:s')
 {
-    if (!empty($time)) {
-        $rtime = date("Y-m-d H:i:s", $time);
-        $rtime2 = date("Y-m-d", $time);
-        $htime = date("H:i", $time);
-
-        $time = time() - $time;
-        if ($time < 60) {
-            $str = '刚刚';
-        } elseif ($time < 60 * 60) {
-            $min = floor($time / 60);
-            $str = $min . '分钟前';
-        } elseif ($time < 60 * 60 * 24) {
-            $h = floor($time / (60 * 60));
-            $str = $h . '小时前 ' . $htime;
-        } elseif ($time < 60 * 60 * 24 * 3) {
-            $d = floor($time / (60 * 60 * 24));
-            if ($d == 1)
-                $str = '昨天 ' . $htime;
-            else
-                $str = '前天 ' . $htime;
+    if (empty($timeInt) || !is_numeric($timeInt) || !$timeInt) {
+        return '';
+    }
+    $d = time() - $timeInt;
+    if ($d < 0) {
+        return '';
+    } else {
+        if ($d < 60) {
+            return $d . '秒前';
         } else {
-            switch ($format) {
-                case 1:
-                    $str = $rtime;
-                    break;
-                default:
-                    $str = $rtime2;
-                    break;
+            if ($d < 3600) {
+                return floor($d / 60) . '分钟前';
+            } else {
+                if ($d < 86400) {//小于24小时
+                    return floor($d / 3600) . '小时前';
+                } else {
+                    if ($d < 604800) {//1周内
+                        return floor($d / 86400) . '天前';
+                    }else{
+                        if ($d < 2592000) {//1个月内
+                            return floor($d / 604800) . '周前';
+                        } else {
+                            if ($d < 31536000) {//1年
+                                return floor($d / 2592000) . '月前';
+                            } else {
+                                return date($format, $timeInt);
+                            }
+                        }
+                    }
+                }
             }
         }
-    } else {
-        $str = '暂无记录';
     }
-    return $str;
 }
 
 /**
