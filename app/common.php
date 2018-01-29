@@ -257,20 +257,6 @@ function list_file($path, $pattern = '*')
             }
         }
     }
-    $cmp_func = create_function('$a,$b', '
-		if( ($a["isDir"] && $b["isDir"]) || (!$a["isDir"] && !$b["isDir"]) ){
-			return  $a["filename"]>$b["filename"]?1:-1;
-		}else{
-			if($a["isDir"]){
-				return -1;
-			}else if($b["isDir"]){
-				return 1;
-			}
-			if($a["filename"]  ==  $b["filename"])  return  0;
-			return  $a["filename"]>$b["filename"]?-1:1;
-		}
-		');
-    usort($dir, $cmp_func);
     return $dir;
 }
 
@@ -779,7 +765,7 @@ function write_log($content='',$log_file_name)
             $content.=' 操作员:'.get_users(open_secret(cookie('UID')))['user_login'];
             $content.=' 操作ip:'.request()->ip()."\n";
 
-            $TxtFileName = config('log_path'). $log_file_name . ".txt";//创建文章
+            $TxtFileName = config('log.path'). $log_file_name . ".txt";//创建文章
             $TxtRes = fopen($TxtFileName, "a");
             fwrite($TxtRes,$content);
         }

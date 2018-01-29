@@ -30,9 +30,8 @@ class Menu extends Base
         }
 
         $menu_nums = Db::name('menu')->count();
-        $controller = ROOT_PATH . DS . 'app/admin/controller/';
-        $controller = list_file($controller);//文章内页模板
-
+        $controller = ROOT_PATH . DS . 'app/admin/controller';
+        $controller = list_file($controller,"*.php");//文章内页模板
         $menu_map = [
             'menu_nums'=>$menu_nums,
             'menu_list'=>$menu_list,

@@ -8,10 +8,7 @@ CREATE TABLE `edd_imgs` (
   `img_path` varchar(255) DEFAULT NULL COMMENT '图片路径',
   `type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '来源0-本地1-七牛',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='图片管理';
-INSERT INTO `edd_imgs` VALUES 
-('5','493.611KB','1516686038','1','127.0.0.1','http://p2otxz81j.bkt.clouddn.com/33552fcada85ccb7d5906bfe3bda3ec3.jpg','1'),
-('6','8.5KB','1516686047','1','127.0.0.1','http://p2otxz81j.bkt.clouddn.com/f100733b1b9c3d652d3202ac2dbc91fc.jpg','1');
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='图片管理';
 DROP TABLE IF EXISTS edd_log;
 CREATE TABLE `edd_log` (
   `log_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -152,10 +149,7 @@ CREATE TABLE `edd_role` (
   KEY `status` (`status`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COMMENT='角色表';
 INSERT INTO `edd_role` VALUES 
-('23','超级管理员','0','1','','1513757032','1516688138','0','216,218,310,309,308,217,307,306,305,249,331,304,322,252,330,329,321,320,319,250,312,311,211,318,317,316,265,267,325,324,323,266,315,314,313,328,327,326','216-217'),
-('26','1223123','0','0','','0','0','0','',''),
-('27','21312321','0','0','','0','0','0','',''),
-('28','123123','0','0','','0','0','0','','');
+('23','超级管理员','0','1','','1513757032','1516688138','0','216,218,310,309,308,217,307,306,305,249,331,304,322,252,330,329,321,320,319,250,312,311,211,318,317,316,265,267,325,324,323,266,315,314,313,328,327,326','216-217');
 DROP TABLE IF EXISTS edd_role_user;
 CREATE TABLE `edd_role_user` (
   `role_user_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -209,7 +203,7 @@ CREATE TABLE `edd_test` (
   `d_time` varchar(255) NOT NULL DEFAULT '' COMMENT '软删除',
   `name` varchar(8) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COMMENT='模板表,其余表按这张表字段编写';
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COMMENT='模板表,其余表按这张表字段编写';
 INSERT INTO `edd_test` VALUES 
 ('1','0','1499229055','','',''),
 ('2','1','1499229055','','',''),
@@ -246,7 +240,7 @@ CREATE TABLE `edd_users` (
   KEY `user_nicename` (`user_nicename`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='用户表';
 INSERT INTO `edd_users` VALUES 
-('1','admin','','f354bc916f4979959bb4c274e8e92976','aZKZBygJtL','admin','dc_wen663@163.com','127.0.0.1','1516685801','1517207080','1489155324','1','','95');
+('1','admin','','f354bc916f4979959bb4c274e8e92976','aZKZBygJtL','admin','dc_wen663@163.com','127.0.0.1','1517218170','1517207080','1489155324','1','','97');
 DROP TABLE IF EXISTS edd_widgets;
 CREATE TABLE `edd_widgets` (
   `wid_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -258,7 +252,7 @@ CREATE TABLE `edd_widgets` (
   `wid_name` varchar(255) DEFAULT NULL COMMENT '插件名字',
   `wid_key` varchar(255) DEFAULT NULL COMMENT '插件关键词',
   PRIMARY KEY (`wid_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='插件表';
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='插件表';
 INSERT INTO `edd_widgets` VALUES 
 ('10','api_key:78aac6166f2318bd2eaceae0fba6aa84|sign:marsmob','default','fa fa-comments-o','1499931295','1','短信接口','msn'),
 ('11','url:https://captcha.luosimao.com/api/site_verify|api_key:fbdd90fa23bf05f970badd9a7fde8d0b|site_key:19d4e7396b5bda1e1db0442b9d28219d','info','fa fa-cogs','1501487859','1','螺丝帽验证接口','lsm_verify'),
