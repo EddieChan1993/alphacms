@@ -123,8 +123,8 @@ class App
             if (self::$debug) {
                 Log::record('[ ROUTE ] ' . var_export($dispatch, true), 'info');
                 Log::record('[ HEADER ] ' . var_export($request->header(), true), 'info');
-                Log::record('[ PARAM ] ' . var_export($request->param(), true), 'info');
             }
+            Log::record('[ PARAM ] ' . var_export($request->param(), true), 'info');
 
             // 监听 app_begin
             Hook::listen('app_begin', $dispatch);
