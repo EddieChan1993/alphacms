@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/app/admin/controller/Menu.php" line="56" />
+  </component>
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="738fa4f4-1245-44c6-ba23-b18f6623848b" name="Default" comment="" />
+=======
+    <list default="true" id="738fa4f4-1245-44c6-ba23-b18f6623848b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/php-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/admin/service/UpdateService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/.scrutinizer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/autoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/cdn_get_bandwidth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/cdn_get_flux.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/cdn_get_log_list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/cdn_refresh_urls_dirs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/cdn_timestamp_antileech.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/image_url_builder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/persistent_fop_init.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/persistent_fop_status.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/pfop_mkzip.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/pfop_vframe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/pfop_video_avthumb.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/pfop_watermark.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/prefop.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/qetag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_batch_change_mime.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_batch_change_type.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_batch_copy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_batch_delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_batch_delete_after_days.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_batch_move.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_batch_stat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_bucket_domains.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_buckets.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_change_mime.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_change_type.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_copy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_delete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_delete_after_days.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_download_urls.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_fetch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_move.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_prefetch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rs_stat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rsf_list_bucket.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/rsf_list_files.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/saveas.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/upload_and_callback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/upload_and_pfop.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/upload_mgr_init.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/upload_multi_demos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/upload_simple_file.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/upload_tokens.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/examples/upload_verify_callback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Auth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Cdn/CdnManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Etag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Http/Client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Http/Error.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Http/Request.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Http/Response.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Processing/ImageUrlBuilder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Processing/Operation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Processing/PersistentFop.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Storage/BucketManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Storage/FormUploader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Storage/ResumeUploader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Storage/UploadManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Zone.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/test-env.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/AuthTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/Base64Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/BucketTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/CdnManagerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/Crc32Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/DownloadTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/EtagTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/FopTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/FormUpTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/HttpTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/ImageUrlBuilderTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/PfopTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/ResumeUpTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/Qiniu/Tests/ZoneTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/qiniu/tests/bootstrap.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/upload/admin/avatar/20170707/181a50d6e90eabaf74e885f1dde2b6cc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/upload/admin/avatar/20170707/1918386ea782997445a421ece9df3560.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/upload/admin/avatar/20170707/81b8e35690d262f0520dda92bfef97b6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/upload/admin/avatar/20170707/d1315153c426b1bf1c30cd9f008da753.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/upload/admin/avatar/20170801/f546230d7286cfbb64e025ce87ca30c0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/upload/admin/avatar/20171221/fedaae08b6e32bb2cc8a8323fecf653b.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/common.php" afterPath="$PROJECT_DIR$/app/admin/common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/controller/Upload.php" afterPath="$PROJECT_DIR$/app/admin/controller/Upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/conf/config.php" afterPath="$PROJECT_DIR$/data/conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/runtime/log/201801/16.log" afterPath="$PROJECT_DIR$/data/runtime/log/201801/16.log" />
+    </list>
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@182.61.38.218" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@182.61.38.218" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="huanqiu" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="EddCMF" />
+  </component>
+  <component name="FileEditorManager">
+<<<<<<< HEAD
+    <splitter split-orientation="horizontal" split-proportion="0.67454886">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="UpdateService.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/admin/service/UpdateService.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="681">
+                  <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#127#161#0#PHP" expanded="true" />
+=======
+<<<<<<< HEAD
+    <splitter split-orientation="horizontal" split-proportion="0.47227788">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="TestService.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/admin/service/TestService.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="260">
+                  <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#7#85#0#PHP" expanded="true" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="standard_2.php" pinned="false" current-in-tab="false">
+            <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_2.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="297">
+                  <caret line="662" column="9" selection-start-line="662" selection-start-column="9" selection-end-line="662" selection-end-column="9" />
+                  <folding />
+=======
+          <file leaf-file-name="OneService.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/home/service/OneService.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#34#68#0#PHP" expanded="true" />
+                  </folding>
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/admin/common.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="287">
+                  <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+=======
+          <file leaf-file-name="standard_5.php" pinned="false" current-in-tab="false">
+            <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_5.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="299">
+                  <caret line="293" column="7" lean-forward="false" selection-start-line="293" selection-start-column="7" selection-end-line="293" selection-end-column="7" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="upload_and_callback.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/vendor/qiniu/examples/upload_and_callback.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="483">
+                  <caret line="24" column="64" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="64" />
+=======
+          <file leaf-file-name="standard_8.php" pinned="false" current-in-tab="false">
+            <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="299">
+                  <caret line="840" column="9" lean-forward="false" selection-start-line="840" selection-start-column="9" selection-end-line="840" selection-end-column="9" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/common.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="287">
+                  <caret line="599" column="9" selection-start-line="599" selection-start-column="9" selection-end-line="599" selection-end-column="9" />
+                  <folding>
+                    <marker date="1516191239459" expanded="true" signature="17095:17116" ph="DROP TABLE I... " />
+                    <marker date="1516191239459" expanded="true" signature="17613:17627" ph="SELECT * FRO... ${$db_prefix}" />
+                    <marker date="1516191239459" expanded="true" signature="18165:18212" ph="INSERT INTO `${$db_prefix_holder}`... " />
+                  </folding>
+=======
+          <file leaf-file-name="16.log" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/runtime/log/201801/16.log">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="893">
+                  <caret line="1174" column="1" lean-forward="true" selection-start-line="1174" selection-start-column="1" selection-end-line="1174" selection-end-column="1" />
+                  <folding />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="UploadManager.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Storage/UploadManager.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="980">
+                  <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+=======
+          <file leaf-file-name="Core_c.php" pinned="false" current-in-tab="false">
+            <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_c.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="303">
+                  <caret line="289" column="26" lean-forward="false" selection-start-line="289" selection-start-column="26" selection-end-line="289" selection-end-column="26" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Auth.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="287">
+                  <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+=======
+          <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/home/controller/Base.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="Upload.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/admin/controller/Upload.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="21">
+                  <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#38#74#0#PHP" expanded="true" />
+=======
+          <file leaf-file-name="One.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/home/controller/One.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#118#150#0#PHP" expanded="true" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="standard_7.php" pinned="false" current-in-tab="false">
+            <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_7.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="297">
+                  <caret line="407" column="9" selection-start-line="407" selection-start-column="9" selection-end-line="407" selection-end-column="9" />
+                  <folding />
+=======
+          <file leaf-file-name="AdminCom.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/common/controller/AdminCom.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="400">
+                  <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#40#61#0#PHP" expanded="true" />
+                  </folding>
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="PHPExcel.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/vendor/phpexcel/PHPExcel.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="84">
+                  <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+=======
+          <file leaf-file-name="BaseServer.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/common/service/BaseServer.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="380">
+                  <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+<<<<<<< HEAD
+        <leaf>
+          <file leaf-file-name="standard_3.php" pinned="false" current-in-tab="false">
+            <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="778" column="21" selection-start-line="778" selection-start-column="21" selection-end-line="778" selection-end-column="21" />
+=======
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Test.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/admin/controller/one/Test.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="380">
+                  <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+<<<<<<< HEAD
+          <file leaf-file-name="upload_simple_file.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/vendor/qiniu/examples/upload_simple_file.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+=======
+          <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/extend/Auth.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1443">
+                  <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="03-1editGroup.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/admin/alpha/p-extra/edit-boot/03-1editGroup.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+                  <folding>
+                    <marker date="1516030112050" expanded="true" signature="564:1932" ph="{...}" />
+                    <marker date="1516030112050" expanded="true" signature="1741:1926" ph="{&quot;name&quot;: 'b'...}" />
+                    <marker date="1516030112050" expanded="true" signature="1959:2414" ph="..." />
+                    <marker date="1516030112050" expanded="false" signature="1991:2009" ph="..." />
+                    <marker date="1516030112050" expanded="true" signature="2010:2405" ph="..." />
+                    <marker date="1516030112050" expanded="true" signature="2048:2398" ph="..." />
+                    <marker date="1516030112050" expanded="true" signature="2055:2108" ph="..." />
+                    <marker date="1516030112050" expanded="true" signature="2115:2298" ph="..." />
+                    <marker date="1516030112050" expanded="true" signature="2138:2177" ph="..." />
+                    <marker date="1516030112050" expanded="true" signature="2305:2343" ph="..." />
+                    <marker date="1516030112050" expanded="true" signature="2350:2388" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home_page_posts.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/admin/view/posts/home_page_posts.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="9" column="85" lean-forward="false" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="85" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+<<<<<<< HEAD
+=======
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/controller/one/Test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/service/TestService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="e#7#85#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extend/Auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-28">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readMe.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extend/readMe.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readMe.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/common/extend/readMe.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readMe.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/common/model/readMe.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/controller/Base.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/controller/Admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3255">
+              <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin/service/ComService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="e#35#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseServer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/common/service/BaseServer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gb</find>
+      <find>edit_page</find>
+      <find>$db_prefix_holder</find>
+      <find>textare</find>
+      <find>3</find>
+      <find>.login-container .login-box .login-logo</find>
+      <find>.x-navigation &gt; li.xn-logo &gt; a:first-child</find>
+      <find>.login-container .login-box .login-body .form-control</find>
+      <find>user_status</find>
+      <find>data</find>
+      <find>write_logwrite_log</find>
+      <find>widget-remove</find>
+      <find>menu_type</find>
+      <find>md</find>
+      <find>time</find>
+      <find>tran</find>
+      <find>add</find>
+      <find>9</find>
+      <find>title</find>
+      <find>path</find>
+      <find>login-logo</find>
+      <find>30px</find>
+      <find>line-height:30px</find>
+      <find>tooltip</find>
+      <find>checkbox</find>
+      <find>add_rank</find>
+      <find>user_rank</find>
+      <find>get_nav</find>
+      <find>截取</find>
+      <find>dump</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>href=&quot;__ADMIN__/css/</replace>
+      <replace>src=&quot;__ADMIN__/js/</replace>
+      <replace>UID</replace>
+      <replace>3000</replace>
+      <replace>__ADMIN__</replace>
+      <replace>sm</replace>
+      <replace>2</replace>
+      <replace>10</replace>
+      <replace>res</replace>
+      <replace>8</replace>
+      <replace>xs</replace>
+      <replace>7</replace>
+      <replace>radio</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/public/admin/alpha/temp_edit.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/admin/edit_self_page.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/role/home_page.html" />
+        <option value="$PROJECT_DIR$/app/admin/config.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Test.php" />
+        <option value="$PROJECT_DIR$/data/conf/db.php" />
+        <option value="$PROJECT_DIR$/extend/Auth.php" />
+        <option value="$PROJECT_DIR$/app/admin/view/test/home_page.html" />
+        <option value="$PROJECT_DIR$/extend/Page.php" />
+        <option value="$PROJECT_DIR$/public/admin/alpha/temp_home.html" />
+        <option value="$PROJECT_DIR$/public/admin/alpha/temp_sigle_table.html" />
+        <option value="$PROJECT_DIR$/app/admin/controller/one/Test.php" />
+        <option value="$PROJECT_DIR$/app/admin/view/posts/home_page_posts.html" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Imgs.php" />
+        <option value="$PROJECT_DIR$/app/admin/view/posts/edit_page_posts.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/imgs/home_page.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/dblist/home_page.html" />
+        <option value="$PROJECT_DIR$/public/admin/alpha/p-extra/edit-boot/03-1editGroup.html" />
+        <option value="$PROJECT_DIR$/app/admin/view/login/login_page.html" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Admin.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Dblist.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Menu.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Posts.php" />
+        <option value="$PROJECT_DIR$/app/admin/servers/Base.php" />
+        <option value="$PROJECT_DIR$/app/common/controller/BaseServer.php" />
+        <option value="$PROJECT_DIR$/app/common/server/BaseServer.php" />
+        <option value="$PROJECT_DIR$/app/admin/service/test.php" />
+        <option value="$PROJECT_DIR$/app/admin/service/Test.php" />
+        <option value="$PROJECT_DIR$/app/admin/service/TestService.php" />
+        <option value="$PROJECT_DIR$/data/runtime/log/201801/16.log" />
+        <option value="$PROJECT_DIR$/app/home/service/OneService.php" />
+        <option value="$PROJECT_DIR$/app/home/controller/Base.php" />
+        <option value="$PROJECT_DIR$/app/home/controller/Game.php" />
+        <option value="$PROJECT_DIR$/app/home/controller/One.php" />
+        <option value="$PROJECT_DIR$/app/admin/service/BaseService.php" />
+        <option value="$PROJECT_DIR$/app/common/controller/AdminCom.php" />
+        <option value="$PROJECT_DIR$/app/common/service/BaseServer.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Base.php" />
+        <option value="$PROJECT_DIR$/app/admin/service/ComService.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Login.php" />
+        <option value="$PROJECT_DIR$/extend/readMe.md" />
+        <option value="$PROJECT_DIR$/app/common/extend/readMe.md" />
+        <option value="$PROJECT_DIR$/app/common/model/readMe.md" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/data/conf/config.php" />
+        <option value="$PROJECT_DIR$/app/admin/controller/Upload.php" />
+        <option value="$PROJECT_DIR$/vendor/qiniu/Auth.php" />
+        <option value="$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Auth.php" />
+        <option value="$PROJECT_DIR$/app/admin/common.php" />
+        <option value="$PROJECT_DIR$/app/common.php" />
+        <option value="$PROJECT_DIR$/app/admin/service/UpdateService.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+<<<<<<< HEAD
+    <option name="x" value="-7" />
+    <option name="width" value="1871" />
+    <option name="height" value="1057" />
+=======
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+<<<<<<< HEAD
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runtime" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+=======
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+<<<<<<< HEAD
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runtime" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+=======
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="upload" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alphaCMS" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="alphacms">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="alphacms">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="data">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="upload">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="alphacms">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="data">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="alphacms">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="my_log&#9;FILE&#9;file://C:/Users/Administrator/Desktop/alphacms/data/logmy_log.txt&#10;Que&#9;null&#9;null&#10;plugins.js&#9;FILE&#9;file://C:/code_edd/201706/alphacms/public/admin/alpha/js/plugins.js" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="nodejs_interpreter_path" value="D:/it-soft/node-v6.10.3-win-x64/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="D:\it-soft\node-v6.10.3-win-x64\node.exe" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/index.php" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code_edd\201712\alphaCMS\app\common\server" />
+      <recent name="C:\Users\Administrator\Desktop\alphacms_v2.7(1)\app\admin\controller" />
+      <recent name="C:\Users\Administrator\Desktop\alphacms_v2.7(1)\app\admin\controller\one" />
+      <recent name="C:\code_edd\201706\alphacms\public\admin\alpha\plugins" />
+      <recent name="C:\code_edd\201706\alphacms\app\admin\view" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\alphaCMS\vendor" />
+      <recent name="E:\alphaCMS\vendor\qiniu" />
+      <recent name="E:\alphaCMS\app\home\controller" />
+      <recent name="C:\Users\Administrator\Desktop\alphaCMS" />
+      <recent name="C:\Users\Administrator\Desktop\alphaCMS\app\admin\controller\one" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="738fa4f4-1245-44c6-ba23-b18f6623848b" name="Default" comment="" />
+      <created>1488706361042</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488706361042</updated>
+      <workItem from="1488706362384" duration="4845000" />
+      <workItem from="1496580334461" duration="203000" />
+      <workItem from="1498647285236" duration="14893000" />
+      <workItem from="1498703120807" duration="1445000" />
+      <workItem from="1498705854263" duration="1949000" />
+      <workItem from="1498727392898" duration="3145000" />
+      <workItem from="1498738459300" duration="9251000" />
+      <workItem from="1498784748961" duration="4057000" />
+      <workItem from="1498789343583" duration="5418000" />
+      <workItem from="1498794904589" duration="11649000" />
+      <workItem from="1499044202508" duration="91000" />
+      <workItem from="1499044506241" duration="21926000" />
+      <workItem from="1499129979673" duration="24369000" />
+      <workItem from="1499218879325" duration="19465000" />
+      <workItem from="1499241244009" duration="892000" />
+      <workItem from="1499242245243" duration="819000" />
+      <workItem from="1499405256491" duration="11488000" />
+      <workItem from="1499917104134" duration="10286000" />
+      <workItem from="1499933897219" duration="614000" />
+      <workItem from="1499993947404" duration="40000" />
+      <workItem from="1499996102069" duration="16669000" />
+      <workItem from="1500022012133" duration="601000" />
+      <workItem from="1500253326369" duration="3265000" />
+      <workItem from="1500259270544" duration="4000" />
+      <workItem from="1500279543724" duration="133000" />
+      <workItem from="1500280834321" duration="1163000" />
+      <workItem from="1500392410882" duration="2156000" />
+      <workItem from="1500472405413" duration="3427000" />
+      <workItem from="1500514191269" duration="1201000" />
+      <workItem from="1500520886744" duration="2768000" />
+      <workItem from="1500615454247" duration="251000" />
+      <workItem from="1501056482458" duration="550000" />
+      <workItem from="1501477904301" duration="7009000" />
+      <workItem from="1501487602898" duration="2698000" />
+      <workItem from="1501549815851" duration="19690000" />
+      <workItem from="1501635461121" duration="11994000" />
+      <workItem from="1501650671308" duration="2299000" />
+      <workItem from="1502090600358" duration="128000" />
+      <workItem from="1502090800625" duration="382000" />
+      <workItem from="1502155612889" duration="15000" />
+      <workItem from="1504579506039" duration="1580000" />
+      <workItem from="1504755561914" duration="1247000" />
+      <workItem from="1505361990161" duration="1354000" />
+      <workItem from="1506051457804" duration="586000" />
+      <workItem from="1513733904555" duration="1345000" />
+      <workItem from="1513735282662" duration="67000" />
+      <workItem from="1513737195085" duration="2428000" />
+      <workItem from="1513754638260" duration="13561000" />
+      <workItem from="1513775439737" duration="7221000" />
+      <workItem from="1513820357104" duration="6863000" />
+      <workItem from="1513828148659" duration="94000" />
+      <workItem from="1513832249932" duration="1739000" />
+      <workItem from="1513850155423" duration="2876000" />
+      <workItem from="1515649256512" duration="3444000" />
+      <workItem from="1516067458568" duration="4095000" />
+      <workItem from="1516171491494" duration="2762000" />
+      <workItem from="1516184890203" duration="7561000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="284894000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="270564000" />
+=======
+    <option name="totallyTimeSpent" value="274496000" />
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="-7" y="0" width="1871" height="1057" extended-state="0" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28464818" sideWeight="0.48376623" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17338488" sideWeight="0.51623374" order="0" side_tool="false" content_ui="combo" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28464818" sideWeight="0.48376623" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1433902" sideWeight="0.51623374" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15511727" sideWeight="0.51623374" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19848156" sideWeight="0.5063966" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11353944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19826652" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< HEAD
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34236187" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1991342" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09434968" sideWeight="0.504329" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22294372" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.118435755" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06703911" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.296369" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/common/readMe.md" />
+    <entry file="file://$PROJECT_DIR$/app/home/controller/Game.php" />
+    <entry file="file://$PROJECT_DIR$/app/home/service/OneService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/controller/One.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/controller/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#39#72#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/service/ComService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#35#69#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/readMe.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/extend/readMe.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/model/readMe.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/one/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/think">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/service/TestService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="127" column="60" selection-start-line="127" selection-start-column="60" selection-end-line="127" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/service/BaseServer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/conf/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thinkphp/library/traits/controller/Jump.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/tests/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Imgs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/examples/saveas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gateway/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gateway/Applications/YourApp/start_businessworker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gateway/Applications/YourApp/start_gateway.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/workerman/workerman/Worker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-file-iterator/src/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-file-iterator/src/Facade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding>
+            <element signature="e#6#245#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gateway/Applications/YourApp/Events.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#588#619#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/gateway/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Zone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpexcel/PHPExcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/Auth.php">
+=======
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/home/controller/One.php">
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/src/Qiniu/functions.php">
+=======
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+    <entry file="file://$PROJECT_DIR$/app/home/controller/Base.php">
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="778" column="21" selection-start-line="778" selection-start-column="21" selection-end-line="778" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/examples/upload_and_callback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/examples/upload_simple_file.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/qiniu/src/Qiniu/Storage/UploadManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="662" column="9" selection-start-line="662" selection-start-column="9" selection-end-line="662" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="599" column="9" selection-start-line="599" selection-start-column="9" selection-end-line="599" selection-end-column="9" />
+          <folding>
+            <marker date="1516191239459" expanded="true" signature="17095:17116" ph="DROP TABLE I... " />
+            <marker date="1516191239459" expanded="true" signature="17613:17627" ph="SELECT * FRO... ${$db_prefix}" />
+            <marker date="1516191239459" expanded="true" signature="18165:18212" ph="INSERT INTO `${$db_prefix_holder}`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="407" column="9" selection-start-line="407" selection-start-column="9" selection-end-line="407" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/controller/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="e#38#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/service/UpdateService.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="681">
+          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding>
+            <element signature="e#127#161#0#PHP" expanded="true" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="420">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="e#118#150#0#PHP" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="189">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+>>>>>>> cf1eb8cdff4771998be4099881212f4162e8b216
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/common/controller/AdminCom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#61#0#PHP" expanded="true" />
+>>>>>>> 2178f02d5d20830a9f3434bc5af933f920858cfc
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

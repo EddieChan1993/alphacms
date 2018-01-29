@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {include file='Public:head_in' /}
+</head>
+<body>
+<div class="panel panel-default">
+    <form id="edit_form" method="post" action="{:url('admin/Test2/editThink')}" class="form-horizontal" role="form">
+        <input type="hidden" value="{$id}" name="id">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-10">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">名字</label>
+                        <div class="col-xs-9">
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                <input type="text" value="{$name}" name="name" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-info pull-right">保存修改<span class="fa fa-floppy-o fa-right"></span></button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
