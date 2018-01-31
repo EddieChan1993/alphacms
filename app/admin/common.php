@@ -46,6 +46,7 @@ function del_role_log($user_id, $role_id)
  * 添加图片日志
  * @param $path
  * @param $type
+ * @param string $fileSize
  * @throws Exception
  */
 function add_img_db($path,$type,$fileSize="")
@@ -111,6 +112,7 @@ function is_stop($type)
 
 /**
  * 菜单类型
+ * @param $name
  * @param $type
  * @return string
  */
@@ -147,6 +149,7 @@ function is_checked($is_ok)
 /**
  * 默认头像
  * @param $img
+ * @return string
  */
 function is_img($img)
 {
@@ -155,8 +158,9 @@ function is_img($img)
 
 /**
  * 获取文章分类名称
- * @param $posts_id文章id
+ * @param $posts_id
  * @return false|PDOStatement|string|\think\Collection
+ * @internal param $posts_id文章id
  */
 function get_terms($posts_id)
 {

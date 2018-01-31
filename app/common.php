@@ -278,8 +278,10 @@ function ajax_return($data = [], $msg = "", $code = 0, $extend = [])
 
 /**
  * 功能：获取时间差
- * @param int $time
+ * @param $timeInt
+ * @param string $format
  * @return string 时间差值
+ * @internal param int $time
  */
 function tranTime($timeInt, $format = 'Y-m-d H:i:s')
 {
@@ -320,6 +322,9 @@ function tranTime($timeInt, $format = 'Y-m-d H:i:s')
 
 /**
  * 获取树状结构数组
+ * @param $data
+ * @param $parent_name
+ * @return array
  */
 function get_tree_array($data,$parent_name)
 {
@@ -334,10 +339,11 @@ function get_tree_array($data,$parent_name)
 
 /**
  * 获取选中id的下级树状图
- * @param $data
  * @param $parent_id
  * @param string $parent_name
  * @param string $id_name
+ * @return array
+ * @internal param $data
  */
 function get_child_tree($parent_id,$parent_name='parent_id',$id_name='client_id')
 {
@@ -355,10 +361,10 @@ function get_child_tree($parent_id,$parent_name='parent_id',$id_name='client_id'
 
 /**
  * 获取孩子节点
- * @param $data所有数据
- * @param $parent_id父id
- * @param $parent_name父字段名
- * @param $id_name表单id
+ * @param $parent_id
+ * @param string $parent_name
+ * @param string $id_name
+ * @return array
  */
 function get_childs($parent_id,$parent_name='parent_id',$id_name='client_id')
 {
@@ -530,6 +536,8 @@ function array_remove($data, $key){
 
 /**
  *把用户输入的文本转义（主要针对特殊符号和emoji表情）
+ * @param $str
+ * @return mixed|string
  */
 function userTextEncode($str){
     if(!is_string($str))return $str;
@@ -541,8 +549,11 @@ function userTextEncode($str){
     },$text); //将emoji的unicode留下，其他不动，这里的正则比原答案增加了d，因为我发现我很多emoji实际上是\ud开头的，反而暂时没发现有\ue开头。
     return json_decode($text);
 }
+
 /**
-解码上面的转义
+ * 解码上面的转义
+ * @param $str
+ * @return mixed
  */
 function userTextDecode($str){
     $text = json_encode($str); //暴露出unicode
@@ -817,7 +828,6 @@ function send_sms($tel,$msg)
         return '该插件尚未添加';
     }
     $sms = new Sms($map);
-
     //send 单发接口，签名需在后台报备
     $res = $sms->send($tel, $msg.'【'.$sign.'】');
     if( $res ){
@@ -837,6 +847,7 @@ function send_sms($tel,$msg)
  * @param $wid_key
  * @param $wid_name
  * @return string
+ * @throws Exception
  */
 function plugins_value($wid_key,$wid_name)
 {
@@ -888,6 +899,8 @@ function edd_success($msg)
 
 /**
  * 获取邀请码
+ * @param $user_id
+ * @return string
  */
 function createCode($user_id) {
     static $source_string = 'E5FCDG3HQA4B1NOPIJ2RSTUV67MWX89KLYZ';

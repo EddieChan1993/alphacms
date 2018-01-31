@@ -14,7 +14,7 @@ class Admin extends Base
     function home_page()
     {
         $get = $_GET;
-        $this->setTitle("角色管理");
+        $this->setTitle("管理员管理");
         $this->setTab1("管理员列表");
         $this->setTab2("添加管理员");
         $this->model = "users";

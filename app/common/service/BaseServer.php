@@ -5,7 +5,6 @@
  * Date: 2018/1/15
  * Time: 23:41
  */
-
 namespace app\common\service;
 use think\Controller;
 use think\Log;
