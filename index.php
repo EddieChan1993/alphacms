@@ -14,5 +14,7 @@
 define('APP_PATH', __DIR__ . '/app/');
 
 define('RUNTIME_PATH', __DIR__ . '/data/runtime/');
+// 定义CMF 版本号
+define('ALPHACMS_VERSION', '2.0.0');
 // 加载框架引导文件
 require __DIR__ . '/thinkphp/start.php';
