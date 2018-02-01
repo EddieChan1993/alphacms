@@ -4,7 +4,7 @@ use think\Controller;
 
 class BaseController extends Controller
 {
-    function __construct()
+    protected function _initialize()
     {
         if (!is_installed() && Request()->module() != 'install') {
             $this->redirect("install/Index/homePage");

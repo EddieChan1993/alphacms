@@ -25,15 +25,15 @@ class Base extends BaseController
 
     function __construct()
     {
+        parent::_initialize();
         $comService=new ComService();
         if (!$comService->isLogin()) {
             $this->redirect('admin/core.Login/show_login');
         }
-        if (!$comService->isLogin()) {
-            $this->error($this->getErr());
+        if (!$comService->verifyAuth()) {
+            $this->error($comService->getErr());
         }
     }
-
     /**
      * 设置标题内容
      * @param string $title

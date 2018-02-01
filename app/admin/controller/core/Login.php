@@ -13,8 +13,9 @@ use think\Validate;
  */
 class Login extends BaseController
 {
-    function _initialize()
+    function __construct()
     {
+        parent::_initialize();
         $comService = new ComService();
         if ($comService->isLogin()) {
             $this->redirect('admin/core.Index/index');

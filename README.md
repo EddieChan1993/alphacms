@@ -4,7 +4,7 @@
 E:\alphaCMS\data\install.lock
 ##后台账号，密码
 admin 
-admin123
+666666
 ## 核心优化
 1.E:\alphaCMS\thinkphp\library\think\App.php
 

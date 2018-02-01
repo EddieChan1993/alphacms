@@ -37,7 +37,7 @@
     <div class="login-box animated bounceInDown">
         <div  class="login-logo animated bounceIn"></div>
         <div  class="login-body ">
-            <div class="login-title animated fadeIn"><strong>欢迎使用</strong>, 请安装</div>
+            <div class="login-title animated fadeIn"><strong>欢迎使用</strong>, 准备安装</div>
             <form id="login_in_form" action="{:url('install/Index/install')}" class="form-horizontal" method="post">
                 <div class="form-group">
                     <div class="col-md-12">
@@ -80,6 +80,7 @@
             <div class="pull-left">
             </div>
             <div class="pull-right animated bounceIn">
+                @alphaCMS_{$Think.const.ALPHACMS_VERSION}
             </div>
         </div>
     </div>

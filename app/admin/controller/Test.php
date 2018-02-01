@@ -9,8 +9,6 @@
 namespace app\admin\controller;
 
 use app\admin\controller\core\Base;
-use think\Db;
-use think\Exception;
 
 class Test extends Base
 {

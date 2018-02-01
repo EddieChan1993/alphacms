@@ -13,6 +13,7 @@ class Test2 extends Base
 {
     public function __construct()
     {
+        parent::_initialize();
         $this->model = "test";
         $this->setTitle("测试模块2");
         $this->setTab1("列表");
