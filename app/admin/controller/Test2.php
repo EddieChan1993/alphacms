@@ -11,11 +11,11 @@ use app\admin\controller\core\Base;
 
 class Test2 extends Base
 {
-    public function _initialize()
+    public function __construct()
     {
+        $this->model = "test";
         $this->setTitle("测试模块2");
         $this->setTab1("列表");
         $this->setTab2("添加");
-        $this->model = "test";
     }
 }

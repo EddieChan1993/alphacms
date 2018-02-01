@@ -7,7 +7,10 @@
  */
 
 namespace app\admin\controller;
+
 use app\admin\controller\core\Base;
+use think\Db;
+use think\Exception;
 
 class Test extends Base
 {
@@ -17,7 +20,7 @@ class Test extends Base
         $this->setTitle("测试模块");
         $this->setPanelTitle("panel测试模块");
         $this->model = "test";
-        $data=$this->getDataList($_GET);
-        return view('home_page',$data);
+        $data = $this->getDataList($_GET);
+        return view('home_page', $data);
     }
 }

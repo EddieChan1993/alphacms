@@ -2,16 +2,16 @@
 namespace app\admin\controller\core;
 
 use app\admin\service\ComService;
+use app\common\controller\BaseController;
 use think\Db;
 use think\Exception;
-use think\Request;
 use think\View;
 
 /**
  * 基础控制器
  */
 
-class Base extends ComService
+class Base extends BaseController
 {
     //操作模型
     protected $model;
@@ -23,13 +23,13 @@ class Base extends ComService
     private $tab_1 = "tab_1";
     private $tab_2 = "tab_2";
 
-    function _initialize()
+    function __construct()
     {
-        if (!$this->isLogin()) {
+        $comService=new ComService();
+        if (!$comService->isLogin()) {
             $this->redirect('admin/core.Login/show_login');
         }
-
-        if (!$this->verifyAuth()) {
+        if (!$comService->isLogin()) {
             $this->error($this->getErr());
         }
     }
@@ -78,6 +78,7 @@ class Base extends ComService
      * 获取数据列表,自定义查询模式，
      * @param $data
      * @return array
+     * @throws Exception
      */
     protected function getDataList($data)
     {

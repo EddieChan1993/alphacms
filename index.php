@@ -11,6 +11,7 @@
 
 // [ 应用入口文件 ]
 // 定义应用目录
+define('ROOT', __DIR__ ."/");
 define('APP_PATH', __DIR__ . '/app/');
 
 define('RUNTIME_PATH', __DIR__ . '/data/runtime/');

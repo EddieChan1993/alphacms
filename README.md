@@ -1,4 +1,10 @@
 > AlphaCMS
+##安装
+确保文件已经删除
+E:\alphaCMS\data\install.lock
+##后台账号，密码
+admin 
+admin123
 ## 核心优化
 1.E:\alphaCMS\thinkphp\library\think\App.php
 
