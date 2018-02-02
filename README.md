@@ -1,9 +1,9 @@
 > AlphaCMS
 
-##安装
+## 安装
 确保文件已经删除
 E:\alphaCMS\data\install.lock
-##后台账号，密码
+## 后台账号，密码
 admin 
 666666
 ## 核心优化
