@@ -7,6 +7,7 @@
  * @param string $defaultTablePre 默认表前缀
  * @param string $defaultCharset 默认字符集
  * @return array
+ * @throws Exception
  */
 function cmf_split_sql($file, $tablePre, $charset = 'utf8mb4', $defaultTablePre = 'edd_', $defaultCharset = 'utf8mb4')
 {
@@ -22,9 +23,9 @@ function cmf_split_sql($file, $tablePre, $charset = 'utf8mb4', $defaultTablePre 
         $sql  = str_replace(" `{$defaultTablePre}", " `{$tablePre}", $sql);
         $sqls = explode(";\n", $sql);
         return $sqls;
+    }else{
+        throw new Exception("数据库源文件不存在");
     }
-
-    return [];
 }
 
 function sp_execute_sql($db, $sql)

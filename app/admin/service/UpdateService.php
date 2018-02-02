@@ -76,9 +76,13 @@ class UpdateService extends BaseServer
 
     /**
      * 删除文件
-     * @param $file_path文件路径
-     * @param $type文件来源
-     * @param $id日志表id
+     * @param $file_path
+     * @param $type
+     * @param $id
+     * @return bool
+     * @internal param $file_path文件路径
+     * @internal param $type文件来源
+     * @internal param $id日志表id
      */
     public static function delFile($file_path,$type,$id)
     {
