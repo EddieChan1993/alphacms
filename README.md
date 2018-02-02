@@ -2,12 +2,12 @@
 
 ## 安装
 确保文件已经删除
-E:\alphaCMS\data\install.lock
+> E:\alphaCMS\data\install.lock
 ## 后台账号，密码
-admin 
-666666
+- [x] admin 
+- [x] 666666
 ## 核心优化
-1.E:\alphaCMS\thinkphp\library\think\App.php
+> 1.E:\alphaCMS\thinkphp\library\think\App.php
 
 在调试模式或非调试模式下指定都输出请求参数到日志
 ```
@@ -19,7 +19,7 @@ admin
  Log::record('[ PARAM ] ' . var_export($request->param(), true), 'info');
 ```
 
-2.E:\alphaCMS\thinkphp\library\think\db\Query.php
+> 2.E:\alphaCMS\thinkphp\library\think\db\Query.php
 
 
 ```
