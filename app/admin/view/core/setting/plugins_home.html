@@ -13,6 +13,10 @@
                 </ul>
                 <div class="panel-body tab-content">
                     <div class="tab-pane active" id="tab-first">
+                        <div class="alert alert-warning" role="alert">
+                            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <strong>温馨提醒!</strong>请不要随意的修改<span class="label label-default">插件关键词</span>,否则会影响到相关插件的正常使用
+                        </div>
                         {volist name='widget' id='v'}
                         <div class="col-md-12">
                             <div class="widget widget-{$v.wid_color} widget-item-icon">

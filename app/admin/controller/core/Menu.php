@@ -95,7 +95,7 @@ class Menu extends Base
         $menu_list = menu_left($menu_list, 'id', 'parentid');
 
         $controller = ROOT_PATH . DS . 'app/admin/controller/';
-        $controller = list_file($controller);//文章内页模板
+        $controller = list_file($controller,"*.php");//文章内页模板
 
         $menus = Db::name('menu')->find(input('menu_id'));
         $menu_map = $menus;

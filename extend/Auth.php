@@ -1,13 +1,4 @@
 <?php
-// +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK IT ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2011 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: luofei614 <weibo.com/luofei614>　
-// +----------------------------------------------------------------------
 use think\Db;
 use think\Exception;
 use think\Model;
@@ -73,6 +64,10 @@ class Auth extends Model
 
     /**
      * 判断该角色是否拥有该权限
+     * @param $uid
+     * @param $rule_id
+     * @param $rule_name
+     * @throws Exception
      */
     function role_rule_in($uid, $rule_id, $rule_name)
     {
@@ -91,7 +86,7 @@ class Auth extends Model
                 //拥有该权限
             } else {
                 //该角色不包含该权限
-                throw new Exception('【非法操作】' . $rule_name . '权限');
+                throw new Exception('无权操作【'.$rule_name.'】权限');
             }
         } else {
             //该角色所有权限被禁
@@ -102,6 +97,8 @@ class Auth extends Model
 
     /**
      * 获取当前用户的权限菜单
+     * @param $uid
+     * @return array
      */
     function get_auth_menu($uid)
     {

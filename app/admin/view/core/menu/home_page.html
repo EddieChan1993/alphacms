@@ -32,7 +32,7 @@
                                 <td>@{$v.module}/{$v.controller}/{$v.method}</td>
                                 <td>{:is_stop($v.status)}</td>
                                 <td><i class="{$v.icon}"></i></td>
-                                <td><input onchange="change_order(this)" style="width: 70px" type="number" class="order_change form-control" data-url="{:url('admin/menu/update_order')}" pk-id="{$v.id}" value="{$v.listorder}"></td>
+                                <td><input onchange="change_order(this)" style="width: 70px" type="number" class="order_change form-control" data-url="{:url('admin/core.menu/update_order')}" pk-id="{$v.id}" value="{$v.listorder}"></td>
                                 <td>
                                     <a href="{:url('admin/core.Menu/home_page',['menu_id'=>$v.id])}" class="btn btn-primary btn-rounded btn-sm"><span class="fa fa-plus"></span></a>
                                     <a title="{$v['name']}【编辑】" data-url="{:url('admin/core.Menu/edit_page',['menu_id'=>$v.id])}" onclick="edit_row(this)" class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></a>
@@ -80,7 +80,7 @@
                                             </div>
                                             <div class="col-xs-3">
                                                 <input name="extra_controller" type="text" value="" class="form-control"/>
-                                                <span class="help-block">用于多级控制器（选填）:shop.XXX</span>
+                                                <span class="help-block">用于多级控制器（选填）:core.XXX,单级不填</span>
                                             </div>
                                             <div class="col-md-3">
                                                 <select name="controller" class="form-control select">
@@ -89,10 +89,11 @@
                                                     <option value="{:basename($v.filename,'.php')}">{:basename($v.filename,'.php')}</option>
                                                     {/volist}
                                                 </select>
+                                                <span class="help-block">单级控制器,若有子级菜单，则选择Default</span>
                                             </div>
                                             <div class="col-md-3">
                                                 <input name="method" type="text" value="" class="form-control"/>
-                                                <span class="help-block">默认填default</span>
+                                                <span class="help-block">若有子级菜单，填写default</span>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -115,6 +116,8 @@
                                                     <option value="0">菜单</option>
                                                     <option value="1">权限认证</option>
                                                 </select>
+                                                <span class="help-block">【菜单】显示在左边栏的内容</span>
+                                                <span class="help-block">【权限认证】仅作为功能，不显示</span>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -124,8 +127,8 @@
                                                     <input name="status" type="checkbox" checked value="1"/>
                                                     <span></span>
                                                 </label>
-                                                <span class="help-block">默认正常</span>
-                                            </div>
+                                                <span class="help-block">【默认正常】,若为菜单，则显示，若为功能，且加入权限里，生效</span>
+                                                <span class="help-block">【非正常】若为菜单，则不显示，若为功能，且加入权限里，不生效，</span>                                            </div>
                                         </div>
                                     </div>
                                 </div>
