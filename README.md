@@ -1,4 +1,5 @@
 > AlphaCMS
+
 ##安装
 确保文件已经删除
 E:\alphaCMS\data\install.lock

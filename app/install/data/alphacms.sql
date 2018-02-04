@@ -354,7 +354,7 @@ CREATE TABLE IF NOT EXISTS `edd_users` (
 --
 
 INSERT INTO `edd_users` (`id`, `user_login`, `avatar`, `user_pass`, `user_pass_salt`, `user_nicename`, `user_email`, `last_login_ip`, `last_login_time`, `update_time`, `create_time`, `user_status`, `mobile`, `user_hits`) VALUES
-(1, 'admin', '', 'f354bc916f4979959bb4c274e8e92976', 'aZKZBygJtL', 'admin', 'dc_wen663@163.com', '127.0.0.1', '1517386997', '1517207080', '1489155324', 1, '', 100);
+(1, 'admin', '', 'f354bc916f4979959bb4c274e8e92976', 'aZKZBygJtL', 'admin', 'dc_wen663@163.com', '127.0.0.1', '1517386997', '1517207080', '1489155324', 1, '', 0);
 
 -- --------------------------------------------------------
 
