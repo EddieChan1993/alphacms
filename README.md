@@ -1,10 +1,5 @@
 > AlphaCMS
-
-<<<<<<< HEAD
-##安装
-=======
 ## 安装
->>>>>>> 75f456d534c0668dd8fd88c48721122e207a4b7c
 确保文件已经删除
 > E:\alphaCMS\data\install.lock
 ## 后台账号，密码
