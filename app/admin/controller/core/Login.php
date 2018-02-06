@@ -40,19 +40,19 @@ class Login extends BaseController
             }
 
             if (!Config::get('app_debug')) {
-                $luo_res = self::luosimao_respons(input('luotest_response'));
+                $luo_res = self::luosimao_respons($_POST('luotest_response'));
                 if (!empty($luo_res['error'])) {
                     throw new Exception("验证无效,请重试");
                 }
             }
 
             $users = Db::name('users')
-                ->where('user_login', input('username'))
+                ->where('user_login', $_POST('username'))
                 ->find();
 
             //判断用户是否存在
             if ($users && $users['user_status'] != 0) {
-                $inp_pass = encrypt_password(input('password'), $users['user_pass_salt']);//输入密码转义
+                $inp_pass = encrypt_password($_POST('password'), $users['user_pass_salt']);//输入密码转义
                 $is_sure = $users['user_pass'] == $inp_pass;//密码比对
                 //判断密码是否相同
                 if ($is_sure) {
