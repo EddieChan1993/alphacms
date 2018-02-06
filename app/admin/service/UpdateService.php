@@ -68,8 +68,8 @@ class UpdateService extends BaseServer
             Db::commit();
             $flag = $qiniuUrl;
         } catch (\Exception $e) {
-            Db::rollback();
             self::setErr($e);
+            Db::rollback();
         }
         return $flag;
     }
@@ -111,8 +111,8 @@ class UpdateService extends BaseServer
             Db::commit();
             $flag = true;
         } catch (\Exception $e) {
-            Db::rollback();
             self::setErr($e);
+            Db::rollback();
         }
         return $flag;
     }

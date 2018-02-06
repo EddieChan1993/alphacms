@@ -2,6 +2,7 @@
 
 namespace app\common\extend;
 
+use Qiniu\Auth;
 use Qiniu\Config;
 use Qiniu\Storage\BucketManager;
 use Qiniu\Storage\UploadManager;
@@ -19,7 +20,7 @@ class QiniuEx
     private function __construct($ak, $sk)
     {
         vendor('qiniu.autoload');
-        $this->qiniuApi = new \Qiniu\Auth($ak, $sk);
+        $this->qiniuApi = new Auth($ak, $sk);
     }
 
     public static function getInstance()
@@ -77,8 +78,10 @@ class QiniuEx
 
     /**
      * 获取文件信息
-     * @param $key七牛文件地址,不带CDN
+     * @param $key
+     * @return mixed
      * @throws Exception
+     * @internal param $key七牛文件地址 ,不带CDN
      */
     public function getFileInfo($key)
     {
