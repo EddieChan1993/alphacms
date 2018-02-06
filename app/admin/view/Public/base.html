@@ -58,7 +58,7 @@
 <!-- END TEMPLATE -->
 <!-- END SCRIPTS -->
 <script type="text/javascript">
-    $.getJSON("{:url('admin/Index/get_php_ext')}",function (res) {
+    $.getJSON("{:url('admin/core.Index/get_php_ext')}",function (res) {
         if(res.code) {
             m_success(res.msg);
         }else{

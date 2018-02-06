@@ -16,7 +16,7 @@ use think\Validate;
 
 class LoginService extends BaseServer
 {
-    public static function loginIn()
+    public static function loginIn($param)
     {
         $flag = false;
         try {
@@ -24,18 +24,18 @@ class LoginService extends BaseServer
                 ['username', 'require', '用户名必须填写'],
                 ['password', 'require', '密码必须填写'],
             ]);
-            if (!$validate->check($_POST)) {
+            if (!$validate->check($param)) {
                 throw new Exception($validate->getError());
             }
             if (!Config::get('app_debug')) {
-                $luo_res = self::luosimao_respons(input('luotest_response'));
+                $luo_res = self::luosimao_respons($param['luotest_response']);
                 if (!empty($luo_res['error'])) {
                     throw new Exception("验证无效,请重试");
                 }
             }
 
             $users = Db::name('users')
-                ->where('user_login', input('username'))
+                ->where('user_login', $param['username'])
                 ->find();
             //判断用户是否存在
             if (empty($users)) {
@@ -44,7 +44,7 @@ class LoginService extends BaseServer
             if ($users['user_status'] == 0) {
                 throw new Exception('该用户被封,无法使用');
             }
-            $inp_pass = encrypt_password(input('password'), $users['user_pass_salt']);//输入密码转义
+            $inp_pass = encrypt_password($param['password'], $users['user_pass_salt']);//输入密码转义
             $is_sure = $users['user_pass'] == $inp_pass;//密码比对
             if (!$is_sure) {
                 throw new Exception('密码不正确');
