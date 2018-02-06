@@ -6,7 +6,7 @@
  * Time: 22:12
  */
 
-namespace app\admin\service;
+namespace app\admin\service\core;
 
 
 use app\common\extend\QiniuEx;

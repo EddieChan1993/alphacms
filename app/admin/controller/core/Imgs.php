@@ -1,7 +1,6 @@
 <?php
 namespace app\admin\controller\core;
-use app\admin\service\UpdateService;
-use app\common\extend\QiniuEx;
+use app\admin\service\core\UpdateService;
 use think\Db;
 use think\Exception;
 
