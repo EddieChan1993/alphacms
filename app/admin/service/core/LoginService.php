@@ -82,6 +82,7 @@ class LoginService extends BaseServer
             'response' => $luotestRes,
             'api_key' => plugins_value('lsm_verify', 'api_key')
         ];
+
         $res = http_curl($url, 'post', 'json', $data);
         return $res;
     }

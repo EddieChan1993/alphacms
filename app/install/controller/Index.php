@@ -28,13 +28,9 @@ class Index extends Controller
     //安装逻辑
     public function install()
     {
-        try {
-            $res = InstallService::importDbData($_POST);
-            if (!$res) {
-                throw new Exception(InstallService::getErr());
-            }
-        } catch (\Exception $e) {
-            $this->error($e->getMessage());
+        $res = InstallService::importDbData($_POST);
+        if (!$res) {
+            $this->error(InstallService::getErr());
         }
         $this->success("alphaCMS,安装成功");
     }

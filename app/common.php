@@ -860,7 +860,7 @@ function plugins_value($wid_key,$wid_name)
     }
     $params_arr = explode('|', $widgets);
     foreach ($params_arr as $k=>$v){
-        $chids_arr=explode(':',$v);
+        $chids_arr=explode('=',$v);
         foreach ($chids_arr as $k) {
             if ($k == $wid_name) {
                 return  $chids_arr[1];

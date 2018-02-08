@@ -379,6 +379,6 @@ PRIMARY KEY (`wid_id`)
 --
 
 INSERT INTO `edd_widgets` (`wid_id`, `wid_params`, `wid_color`, `wid_icon`, `wid_date`, `wid_admin`, `wid_name`, `wid_key`) VALUES
-(10, 'api_key:78aac6166f2318bd2eaceae0fba6aa84|sign:marsmob', 'default', 'fa fa-comments-o', '1499931295', 1, '短信接口', 'msn'),
-(11, 'url:https://captcha.luosimao.com/api/site_verify|api_key:fbdd90fa23bf05f970badd9a7fde8d0b|site_key:19d4e7396b5bda1e1db0442b9d28219d', 'info', 'fa fa-cogs', '1501487859', 1, '螺丝帽验证接口', 'lsm_verify'),
-(12, 'ak:YwBMfAjdDqGQMWrwWgQrkHoES8h_sfQ4oJT7esdG|sk:b-laMNJSLbOyGj-W7qfyFOGWEtvinnaeOLZtAs2-|bucket:alphacms|cdn:p2otxz81j.bkt.clouddn.com', 'success', 'fa fa-thermometer-0', '1516242221', 1, '七牛', 'qiniu');
+(10, 'api_key=78aac6166f2318bd2eaceae0fba6aa84|sign=marsmob', 'default', 'fa fa-comments-o', '1499931295', 1, '短信接口', 'msn'),
+(11, 'url=https://captcha.luosimao.com/api/site_verify|api_key=fbdd90fa23bf05f970badd9a7fde8d0b|site_key=19d4e7396b5bda1e1db0442b9d28219d', 'info', 'fa fa-cogs', '1501487859', 1, '螺丝帽验证接口', 'lsm_verify'),
+(12, 'ak=YwBMfAjdDqGQMWrwWgQrkHoES8h_sfQ4oJT7esdG|sk=b-laMNJSLbOyGj-W7qfyFOGWEtvinnaeOLZtAs2-|bucket=alphacms|cdn=p2otxz81j.bkt.clouddn.com', 'success', 'fa fa-thermometer-0', '1516242221', 1, '七牛', 'qiniu');
