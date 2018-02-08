@@ -18,6 +18,7 @@ function showResponse(res) {
             window.location.href = res.url;
         })
     }else{
+        LUOCAPTCHA.reset();
         m_error(res.msg,{
             time:1500
         });
