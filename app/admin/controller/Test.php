@@ -9,9 +9,6 @@
 namespace app\admin\controller;
 
 use app\admin\controller\core\Base;
-use think\Cache;
-use think\cache\driver\Redis;
-use think\Config;
 
 class Test extends Base
 {
