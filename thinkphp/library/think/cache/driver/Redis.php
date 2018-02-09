@@ -12,6 +12,7 @@
 namespace think\cache\driver;
 
 use think\cache\Driver;
+use think\Config;
 
 /**
  * Redis缓存驱动，适合单机部署、有前端代理实现高可用的场景，性能最好
@@ -42,6 +43,9 @@ class Redis extends Driver
     {
         if (!extension_loaded('redis')) {
             throw new \BadFunctionCallException('not support: redis');
+        }
+        if (file_exists($file = ROOT_PATH . 'data/conf/redis.php')) {
+            $this->options = array_merge($options, include($file));
         }
         if (!empty($options)) {
             $this->options = array_merge($this->options, $options);

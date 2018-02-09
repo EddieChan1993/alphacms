@@ -9,13 +9,15 @@
 namespace app\admin\controller;
 
 use app\admin\controller\core\Base;
+use think\Cache;
+use think\cache\driver\Redis;
+use think\Config;
 
 class Test extends Base
 {
     //重写父类homePage()
     function homePage()
     {
-        $this->setTitle("测试模块");
         $this->setPanelTitle("panel测试模块");
         $this->model = "test";
         $data = $this->getDataList($_GET);

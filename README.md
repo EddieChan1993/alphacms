@@ -39,6 +39,40 @@
         return $this;
     }
 ```
+> 3.E:\alphaCMS\thinkphp\library\think\cache\driver\Redis.php
+```
+ /**
+      * 构造函数
+      * @param array $options 缓存参数
+      * @access public
+      */
+     public function __construct($options = [])
+     {
+         if (!extension_loaded('redis')) {
+             throw new \BadFunctionCallException('not support: redis');
+         }
+         if (file_exists($file = ROOT_PATH . 'data/conf/redis.php')) {
+             $this->options = array_merge($options, include($file));
+         }
+         if (!empty($options)) {
+             $this->options = array_merge($this->options, $options);
+         }
+         $this->handler = new \Redis;
+         if ($this->options['persistent']) {
+             $this->handler->pconnect($this->options['host'], $this->options['port'], $this->options['timeout'], 'persistent_id_' . $this->options['select']);
+         } else {
+             $this->handler->connect($this->options['host'], $this->options['port'], $this->options['timeout']);
+         }
+ 
+         if ('' != $this->options['password']) {
+             $this->handler->auth($this->options['password']);
+         }
+ 
+         if (0 != $this->options['select']) {
+             $this->handler->select($this->options['select']);
+         }
+     }
+```
 ## 第三方插件
 ##### 螺丝帽验证接口
 [lusimao](https://luosimao.com/service/sms)
