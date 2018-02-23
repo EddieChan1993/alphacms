@@ -21,4 +21,10 @@ return [
     //管理员默认首页菜单
     'controller'=>'core.admin',
     'action'=>'home_page',
+
+    //自定义分页
+    'my_page' => [
+        'pages_nums' => 15,//分页按钮条数
+        'list_nums' => 20,//每页显示条数
+    ],
 ];

@@ -120,16 +120,3 @@ function cmf_random_string($len = 6)
     }
     return $output;
 }
-
-/**
- * 判断 cmf 核心是否安装
- * @return bool
- */
-function is_installed()
-{
-    static $cmfIsInstalled;
-    if (empty($cmfIsInstalled)) {
-        $cmfIsInstalled = file_exists(ROOT . 'data/install.lock');
-    }
-    return $cmfIsInstalled;
-}

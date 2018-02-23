@@ -9,13 +9,14 @@
 namespace app\home\controller\v1;
 
 
+use app\common\controller\BaseController;
 use think\Controller;
 
 //http://127.0.0.16/v1.Test/index
-class Test extends Controller
+class Test extends BaseController
 {
     function index()
     {
-        echo 'ok';
+        echo 'Welcome To Use <strong>AlphaCMS</strong>_v'.ALPHACMS_VERSION;
     }
 }
