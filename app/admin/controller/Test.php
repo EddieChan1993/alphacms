@@ -17,6 +17,7 @@ class Test extends Base
     {
         $this->setPanelTitle("panel测试模块");
         $this->model = "test";
+        $this->setTitle("模版1");
         $data = $this->getDataList($_GET);
         return view('home_page', $data);
     }

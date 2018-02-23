@@ -12,9 +12,8 @@ use think\Request;
 
 $basename = Request::instance()->root();
 if (pathinfo($basename, PATHINFO_EXTENSION) == 'php') {
-    $basename = dirname($basename);
+    $basename = Request::instance()->domain();
 }
-
 $configs= [
     // +----------------------------------------------------------------------
     // | 应用设置

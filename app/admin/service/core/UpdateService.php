@@ -30,6 +30,7 @@ class UpdateService extends BaseServer
         try {
             if ($file_url) {
                 $thumbUrl = config('view_replace_str.__UPLOAD__') . '/' . $pathBaseUrl . strtr($file_url, "\\", "/");
+                $thumbUrl = parse_url($thumbUrl)['path'];
                 //文件压缩
                 add_img_db($thumbUrl, 0);
                 $flag = $thumbUrl;

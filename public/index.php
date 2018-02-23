@@ -9,13 +9,18 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-// [ 应用入口文件 ]
+// [ 后台应用入口文件 ]
 // 定义应用目录
-define('ROOT', __DIR__ ."/");
-define('APP_PATH', __DIR__ . '/app/');
 
-define('RUNTIME_PATH', __DIR__ . '/data/runtime/');
+define('ROOT', __DIR__ . "/../");
+define('APP_PATH', ROOT . 'app/');
+
+define('UPLOAD_PATH', ROOT . 'upload/');
+
+define('RUNTIME_PATH', ROOT . 'data/runtime/');
+
+define('BIND_MODULE', 'home');
 // 定义CMF 版本号
-define('ALPHACMS_VERSION', '2.0.0');
+define('ALPHACMS_VERSION', '2.5');
 // 加载框架引导文件
-require __DIR__ . '/thinkphp/start.php';
+require ROOT . 'thinkphp/start.php';

@@ -596,7 +596,7 @@ function upload_more($name, $pathName)
 function upload_sigle($name, $pathName)
 {
     $file=request()->file($name);
-    $info = $file->move(ROOT_PATH . 'data' . DS . 'upload/'.$pathName);
+    $info = $file->move('upload/'.$pathName);
 
     if ($info) {
         $drivePath= $info->getSaveName();

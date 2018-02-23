@@ -85,7 +85,7 @@ function sp_create_db_config($config)
         try {
             $confDir = ROOT . 'data/conf/';
             if (!file_exists($confDir)) {
-                mkdir($confDir, 0777, true);
+                mkdir($confDir, 0755, true);
             }
             file_put_contents(ROOT . 'data/conf/db.php', $conf);
         } catch (\Exception $e) {

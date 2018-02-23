@@ -7,18 +7,14 @@ return [
     // 关闭URL中控制器和操作名的自动转换
     'url_convert' => false,
     // 默认模块名,控制器
-    'default_module' => 'admin',
-    'default_controller' => 'core.Index',
+//    'default_module' => 'admin',
+//    'default_controller' => 'core.Index',
     // 视图输出字符串内容替换
     'view_replace_str' => [
         '__ROOT__' => $basename,
-        '__ADDONS__' => $basename . '/addons',
-
-        '__PUBLIC__' => $basename . '/public',
-        '__UPLOAD__' => $basename . '/data/upload',
-        '__ADMIN__' => $basename . '/public/admin/alpha',
-        '__HOME__' => $basename . '/public/home',
-
+        '__PUBLIC__' => $basename ,
+        '__UPLOAD__' => $basename . '/upload',
+        '__ADMIN__' => $basename . '/admin/alpha',
     ],
     //自定义分页
     'my_page' => [

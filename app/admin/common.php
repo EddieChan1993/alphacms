@@ -52,7 +52,7 @@ function del_role_log($user_id, $role_id)
 function add_img_db($path,$type,$fileSize="")
 {
     if ($type == 0) {
-        $filePath = "." . $path;
+        $filePath = ".".$path;
         $fileSize = filesize($filePath);
     }
     $map = [

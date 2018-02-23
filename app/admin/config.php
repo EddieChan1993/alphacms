@@ -5,8 +5,9 @@ return [
         //日志保存目录
         'path' =>  RUNTIME_PATH.'log'.DS.'backend'.DS,
     ],
+    // 默认模块名,控制器
+    'default_controller' => 'core.Index',    //权限配置
 
-    //权限配置
     'auth_config' => [
         'auth_on' => true,           // 认证开关
         'auth_type' => 1,            // 认证方式，1为实时认证；2为登录认证。
