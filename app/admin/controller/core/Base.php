@@ -3,6 +3,7 @@ namespace app\admin\controller\core;
 
 use app\admin\service\ComService;
 use app\common\controller\BaseController;
+use app\common\service\CurdService;
 use think\Db;
 use think\Exception;
 use think\View;
@@ -147,14 +148,18 @@ class Base extends BaseController
     //编辑详情
     public function editPage()
     {
-        $data = Db::name($this->model)->find(input('id'));
+        $whereData = ['id' => input('id')];
+        $data = CurdService::name($this->model)
+            ->getOneData($whereData, 'id,name');
         return view('edit_page', $data);
     }
 
     //编辑逻辑
     public function editThink()
     {
-        if (Db::name($this->model)->update($_POST)) {
+        $res = CurdService::name($this->model)
+            ->update($_POST);
+        if ($res) {
             $this->success("编辑成功");
         }else{
             $this->error("未作任何更新");
@@ -164,9 +169,9 @@ class Base extends BaseController
     //插入逻辑
     public function addThink()
     {
-        $addData = $_POST;
-        $addData['c_time'] = time();
-        if (Db::name($this->model)->insert($addData)) {
+        $res = CurdService::name($this->model)
+            ->add($_POST);
+        if ($res) {
             $this->success("添加成功");
         }else{
             $this->error("添加失败");
@@ -176,10 +181,12 @@ class Base extends BaseController
     //删除逻辑
     public function delThink()
     {
-        if (Db::name($this->model)->delete(input('id'))) {
+        $res = CurdService::name($this->model)
+            ->del(input('id'),true);
+        if ($res) {
             $this->success("删除成功");
         }else{
-            $this->error("删除失败");
+            $this->error($res);
         }
     }
 }

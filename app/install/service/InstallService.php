@@ -9,12 +9,12 @@
 namespace app\install\service;
 
 
-use app\common\service\BaseServer;
+use app\common\service\BaseService;
 use Exception;
 use think\Db;
 use think\Log;
 
-class InstallService extends BaseServer
+class InstallService extends BaseService
 {
     public static function importDbData($postParam)
     {

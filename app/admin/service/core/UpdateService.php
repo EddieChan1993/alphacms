@@ -10,12 +10,12 @@ namespace app\admin\service\core;
 
 
 use app\common\extend\QiniuEx;
-use app\common\service\BaseServer;
+use app\common\service\BaseService;
 use think\Db;
 use think\Exception;
 use think\Image;
 
-class UpdateService extends BaseServer
+class UpdateService extends BaseService
 {
     /**
      * 上传到本地

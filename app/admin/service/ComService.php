@@ -1,9 +1,9 @@
 <?php
 namespace app\admin\service;
-use app\common\service\BaseServer;
+use app\common\service\BaseService;
 use Exception;
 
-class ComService extends BaseServer
+class ComService extends BaseService
 {
     function isLogin()
     {
