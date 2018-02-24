@@ -9,7 +9,8 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 use think\Request;
-
+// 定义CMF 版本号
+define('ALPHACMS_VERSION', '2.5');
 $basename = Request::instance()->root();
 if (pathinfo($basename, PATHINFO_EXTENSION) == 'php') {
     $basename = Request::instance()->domain();

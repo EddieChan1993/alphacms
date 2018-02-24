@@ -42,8 +42,8 @@ class Index extends Base
     //php扩展检测
     function get_php_ext()
     {
-        if (!extension_loaded('memcache')) {
-            $this->error('Memcache扩展未安装');
+        if (!extension_loaded('redis')) {
+            $this->error('Redis扩展未安装');
         }else{
             $this->success('欢迎使用alphaCMS');
         }
