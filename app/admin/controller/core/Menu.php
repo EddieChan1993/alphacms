@@ -2,6 +2,7 @@
 namespace app\admin\controller\core;
 
 use think\cache\driver\Memcache;
+use think\cache\driver\Redis;
 use think\Db;
 use think\Exception;
 use think\Validate;
@@ -14,12 +15,12 @@ class Menu extends Base
     //菜单显示
     function home_page()
     {
-        if (!extension_loaded('memcache')) {
+        if (!extension_loaded('redis')) {
             //没装memcache
             $menu_list = Db::name('menu')->select();
             $menu_list = menu_left($menu_list, 'id', 'parentid');
         }else{
-            $mem = new Memcache();
+            $mem = new Redis();
             if ($mem->has('menu')) {
                 $menu_list = $mem->get('menu');
             }else{
