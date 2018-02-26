@@ -135,7 +135,7 @@ class Sms{
 
     /**
      * @param string $api_url 接口地址
-     * @param string $timeout 超时时间
+     * @param int|string $timeout 超时时间
      * @return bool
      */
     private function http_get( $api_url = '' , $timeout = 5 ){

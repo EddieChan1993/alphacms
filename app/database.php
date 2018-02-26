@@ -65,10 +65,5 @@ if (file_exists($file = ROOT_PATH . 'data/conf/db.php')) {
     $db = $db_online;
 }
 //调试模式，错误模板保持TP默认
-
-if ($db['db_debug']) {
-    return $db;
-}else{
-    return $db_online;
-}
+return $db;
 

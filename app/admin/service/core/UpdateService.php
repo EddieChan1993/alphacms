@@ -10,12 +10,12 @@ namespace app\admin\service\core;
 
 
 use app\common\extend\QiniuEx;
-use app\common\service\BaseServer;
+use app\common\service\BaseService;
 use think\Db;
 use think\Exception;
 use think\Image;
 
-class UpdateService extends BaseServer
+class UpdateService extends BaseService
 {
     /**
      * 上传到本地
@@ -30,6 +30,7 @@ class UpdateService extends BaseServer
         try {
             if ($file_url) {
                 $thumbUrl = config('view_replace_str.__UPLOAD__') . '/' . $pathBaseUrl . strtr($file_url, "\\", "/");
+                $thumbUrl = parse_url($thumbUrl)['path'];
                 //文件压缩
                 add_img_db($thumbUrl, 0);
                 $flag = $thumbUrl;

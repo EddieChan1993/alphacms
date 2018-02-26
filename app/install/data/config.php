@@ -22,8 +22,4 @@ return [
     'prefix'   => '#prefix#',
     "authcode" => '#authcode#',
     //#COOKIE_PREFIX#
-    //调试模式
-    //开启:用本地数据库
-    //关闭:服务器数据库
-    'db_debug'=>true
 ];

@@ -85,7 +85,7 @@ function sp_create_db_config($config)
         try {
             $confDir = ROOT . 'data/conf/';
             if (!file_exists($confDir)) {
-                mkdir($confDir, 0777, true);
+                mkdir($confDir, 0755, true);
             }
             file_put_contents(ROOT . 'data/conf/db.php', $conf);
         } catch (\Exception $e) {
@@ -119,17 +119,4 @@ function cmf_random_string($len = 6)
         $output .= $chars[mt_rand(0, $charsLen)];
     }
     return $output;
-}
-
-/**
- * 判断 cmf 核心是否安装
- * @return bool
- */
-function is_installed()
-{
-    static $cmfIsInstalled;
-    if (empty($cmfIsInstalled)) {
-        $cmfIsInstalled = file_exists(ROOT . 'data/install.lock');
-    }
-    return $cmfIsInstalled;
 }

@@ -1,6 +1,6 @@
 <?php
 namespace app\home\service;
-use app\common\service\BaseServer;
+use app\common\service\BaseService;
 use think\Exception;
 use think\exception\ErrorException;
 use think\Log;
@@ -8,7 +8,7 @@ use think\Log;
 /**
  * 逻辑全部写再服务中
  */
-class OneService extends BaseServer
+class OneService extends BaseService
 {
     public static function ChangeTest(array $param):bool
     {

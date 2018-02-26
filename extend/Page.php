@@ -11,6 +11,7 @@
  * @version: 2014-12-25 09:09:42
  * @Last Modified time: 2014-12-28 17:37:13
  */
+use think\Request;
 
 /**
  * 由于部署iis7.0下时，tp5自带的分页出现未知错误，自己动手封装了一个page分页
@@ -51,10 +52,10 @@ class Page
     /**
      * __construct 构造函数（获取分页所需参数）
      * @param int $count 总条数
-     * @param int $showPages 显示页数
-     * @param int $currPage 当前页数
-     * @param int $subPages 每页显示数量
      * @param string $href 连接（不设置则获取当前URL）
+     * @internal param int $showPages 显示页数
+     * @internal param int $currPage 当前页数
+     * @internal param int $subPages 每页显示数量
      */
     public function __construct($count, $href = '')
     {
@@ -208,7 +209,7 @@ class Page
      */
     function getUrlParam()
     {
-        $req=\think\Request::instance();
+        $req= Request::instance();
         $url=$req->url();
         //获取?后面的参数
         $param = strstr($url, '?');
@@ -229,7 +230,7 @@ class Page
 
 
     /**
-     * construct_Pages 生成页码数组
+     * 生成页码数组
      * 键为页码，值为链接
      * $this->page_arr=Array(
      *     [1] => index.php?page=1
@@ -243,7 +244,6 @@ class Page
         $this->countPages = ceil($this->count / $this->subPages);
         //根据当前页计算前后页数
         $leftPage_num = floor($this->showPages / 2);
-        $rightPage_num = $this->showPages - $leftPage_num;
 
         //左边显示数为当前页减左边该显示的数 例如总显示7页 当前页是5 左边最小为5-3 右边为5+3
         $left = $this->currPage - $leftPage_num;

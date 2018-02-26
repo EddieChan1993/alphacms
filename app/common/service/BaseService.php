@@ -12,10 +12,9 @@ use think\Log;
 /**
  * 所有服务的基础类
  */
-class BaseServer extends Controller
+class BaseService extends Controller
 {
     private static  $err;
-
     /**
      * @return mixed
      */

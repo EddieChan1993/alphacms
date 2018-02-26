@@ -15,9 +15,9 @@ class Test extends Base
     //重写父类homePage()
     function homePage()
     {
-        $this->setTitle("测试模块");
         $this->setPanelTitle("panel测试模块");
         $this->model = "test";
+        $this->setTitle("模版1");
         $data = $this->getDataList($_GET);
         return view('home_page', $data);
     }

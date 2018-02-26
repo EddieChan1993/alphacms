@@ -8,13 +8,13 @@
 
 namespace app\admin\service\core;
 
-use app\common\service\BaseServer;
+use app\common\service\BaseService;
 use think\Config;
 use think\Db;
 use think\Exception;
 use think\Validate;
 
-class LoginService extends BaseServer
+class LoginService extends BaseService
 {
     public static function loginIn($param)
     {

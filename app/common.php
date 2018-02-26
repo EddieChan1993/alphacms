@@ -596,7 +596,7 @@ function upload_more($name, $pathName)
 function upload_sigle($name, $pathName)
 {
     $file=request()->file($name);
-    $info = $file->move(ROOT_PATH . 'data' . DS . 'upload/'.$pathName);
+    $info = $file->move('upload/'.$pathName);
 
     if ($info) {
         $drivePath= $info->getSaveName();
@@ -790,8 +790,6 @@ function write_log($content='',$log_file_name)
  * @return string
  */
 function getFileSize($size){
-    $dw="Byte";
-
     if($size >= pow(2, 40)){
         $size=round($size/pow(2, 40), 3);
         $dw="TB";
@@ -824,9 +822,6 @@ function send_sms($tel,$msg)
         'use_ssl' => FALSE
     ];
     $sign = plugins_value('msn', 'sign');
-    if (empty($sign)) {
-        return '该插件尚未添加';
-    }
     $sms = new Sms($map);
     //send 单发接口，签名需在后台报备
     $res = $sms->send($tel, $msg.'【'.$sign.'】');
@@ -871,32 +866,6 @@ function plugins_value($wid_key,$wid_name)
     throw new Exception($wid_name . "未注册");
 }
 
-
-/**
- * 错误提示
- * @param $msg
- * @return string
- */
-function edd_error($msg)
-{
-    $map = [
-        'error'=>1,
-        'msg'=>$msg
-    ];
-
-    return json_encode($map);
-}
-
-/**
- * 成功提示
- * @param $msg
- * @return string
- */
-function edd_success($msg)
-{
-
-}
-
 /**
  * 获取邀请码
  * @param $user_id
@@ -934,4 +903,16 @@ function decode($code) {
     return $num;
 }
 
+/**
+ * 判断 cmf 核心是否安装
+ * @return bool
+ */
+function is_installed()
+{
+    static $cmfIsInstalled;
+    if (empty($cmfIsInstalled)) {
+        $cmfIsInstalled = file_exists(ROOT . 'data/install.lock');
+    }
+    return $cmfIsInstalled;
+}
 /*==========================================================extra=====================================================*/

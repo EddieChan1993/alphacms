@@ -1,5 +1,6 @@
 <?php
 namespace app\common\controller;
+use think\Config;
 use think\Controller;
 
 class BaseController extends Controller
@@ -7,7 +8,9 @@ class BaseController extends Controller
     protected function _initialize()
     {
         if (!is_installed() && Request()->module() != 'install') {
-            $this->redirect("install/Index/homePage");
+//            Config::set('default_module','install');
+//            define('BIND_MODULE', 'install');
+            $this->redirect("Install/Index/homePage");
             exit;
         }
     }
