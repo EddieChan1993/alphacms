@@ -7,11 +7,9 @@
  */
 
 namespace app\home\controller\v1;
-
-use app\home\controller\Base;
-
+use think\Controller;
 //http://127.0.0.16/v1.Test/index
-class Test extends Base
+class Test extends Controller
 {
     function index()
     {

@@ -17,6 +17,11 @@ use app\home\service\OneService;
  */
 class One extends Base
 {
+    function __construct()
+    {
+        parent::__construct();
+        //用户身份认证逻辑，调用服务
+    }
     public function change()
     {
         $param = [123];

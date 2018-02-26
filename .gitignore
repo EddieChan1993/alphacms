@@ -1,6 +1,6 @@
 ##ignore this file##
 /data/runtime/
-/data/backup/
+/data/backup/*.sql
 /data/conf/db.php
 /data/install.lock
 /.idea/
