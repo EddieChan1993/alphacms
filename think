@@ -2,10 +2,11 @@
 <?php
 //脚本执行入口
 // 定义项目路径
+define('ROOT', __DIR__ . "/");
 
+define('APP_PATH',ROOT. 'app/');
 
-define('APP_PATH', __DIR__ . '/app/');
-define('RUNTIME_PATH', __DIR__ . '/data/runtime/');
+define('RUNTIME_PATH',ROOT . 'data/runtime/');
 
 define('MODULE', 'install');
 
