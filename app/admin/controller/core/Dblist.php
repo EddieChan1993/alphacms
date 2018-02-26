@@ -37,7 +37,6 @@ class Dblist extends Base
     public function export_more()
     {
         $tables = $_POST;
-
         $TxtFileName = config('db_path') . 'all_tables_' . date('YmdHis', time()) . ".sql";//创建文章
         try {
             if (empty($tables)) {
@@ -69,7 +68,6 @@ class Dblist extends Base
                     throw new Exception('未指定需备份的表');
                 }
             }
-            fclose($TxtRes); //关闭指针
         } catch (Exception $e) {
             $this->error($e->getMessage());
         }
