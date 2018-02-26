@@ -25,6 +25,6 @@ return [
     //自定义分页
     'my_page' => [
         'pages_nums' => 15,//分页按钮条数
-        'list_nums' => 20,//每页显示条数
+        'list_nums' => 3,//每页显示条数
     ],
 ];

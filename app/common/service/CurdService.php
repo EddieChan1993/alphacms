@@ -93,4 +93,21 @@ class CurdService
             ->page($pageNum,self::$listNums)
             ->select();
     }
+
+    /**
+     * 后台获取更多数据，带分页样式
+     * @param array $whereData
+     * @param string $fieldData
+     * @param string $orderData
+     * @return false|\PDOStatement|string|\think\Collection
+     */
+    public function getPageData(array $whereData,string $fieldData = '*',string $orderData='id desc')
+    {
+        return Db::name(self::$dbName)
+            ->where($whereData)
+            ->order($orderData)
+            ->field($fieldData)
+            ->epage()
+            ->select();
+    }
 }

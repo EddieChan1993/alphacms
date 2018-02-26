@@ -78,10 +78,11 @@ class Base extends BaseController
     /**
      * 获取数据列表,自定义查询模式，
      * @param $data
+     * @param string $filed
      * @return array
      * @throws Exception
      */
-    protected function getDataList($data)
+    protected function getDataList($data,$filed='*')
     {
         if (empty($this->model)) {
             throw new Exception("模型没有指定");
@@ -110,23 +111,8 @@ class Base extends BaseController
             ->count();
         //分页
         $pagesClass = new \Page($countNums);
-        /**
-         * 数据显示
-         */
-        $query = Db::name($this->model);
-        //显示指定字段
-        if (!empty($data['show'])) {
-            $query->field($data['show']);
-        }
-        //不显示指定字段
-        if (!empty($data['unshow'])) {
-            $query->field($data['unshow'],true);
-        }
-        $modelList = $query
-            ->where($conditions)
-            ->order('id desc')
-            ->epage()
-            ->select();
+        $modelList = CurdService::name($this->model)
+            ->getPageData($conditions, $filed);
 
         $data = [
             'dataArr' => $modelList,//每页数据
