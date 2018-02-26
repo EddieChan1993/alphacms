@@ -11,6 +11,7 @@ class Hello extends Command
     {
         //注册命令名称
         $this->setName("hello");
+        $this->setDescription("hello example");
         //在command.php 配置后，console控制台输入php think hello可以执行下面的逻辑部分
         //php think list 可以看到所有可执行的脚本
     }
