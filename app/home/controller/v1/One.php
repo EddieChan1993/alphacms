@@ -15,7 +15,7 @@ use app\home\service\OneService;
  * 控制器中不要操作逻辑
  * 127.0.0.15/home/v1.one/change
  */
-class One extends BaseController
+class One extends Base
 {
     public function change()
     {
