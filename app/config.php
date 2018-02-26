@@ -10,7 +10,7 @@
 // +----------------------------------------------------------------------
 use think\Request;
 // 定义CMF 版本号
-define('ALPHACMS_VERSION', '2.5');
+define('ALPHACMS_VERSION', '2.6');
 $basename = Request::instance()->root();
 if (pathinfo($basename, PATHINFO_EXTENSION) == 'php') {
     $basename = Request::instance()->domain();
