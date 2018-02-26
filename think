@@ -7,7 +7,7 @@
 define('APP_PATH', __DIR__ . '/app/');
 define('RUNTIME_PATH', __DIR__ . '/data/runtime/');
 
-//define('MODULE', 'install');
+define('MODULE', 'install');
 
 // 加载框架引导文件
 require './thinkphp/console.php';

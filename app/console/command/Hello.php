@@ -4,6 +4,7 @@ namespace app\console\command;
 use think\console\Command;
 use think\console\Input;
 use think\console\Output;
+use think\Log;
 
 class Hello extends Command
 {
@@ -18,6 +19,7 @@ class Hello extends Command
 
     protected function execute(Input $input, Output $output)
     {
+        Log::write("aaa");
         //所有逻辑
         $output->write("Hello World");
     }
