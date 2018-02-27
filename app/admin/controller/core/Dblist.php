@@ -37,8 +37,13 @@ class Dblist extends Base
     public function export_more()
     {
         $tables = $_POST;
-        $TxtFileName = config('db_path') . 'all_tables_' . date('YmdHis', time()) . ".sql";//创建文章
+        $folder = config('db_path');
+        $TxtFileName = $folder . 'all_tables_' . date('YmdHis', time()) . ".sql";//创建文章
+
         try {
+            if (!is_dir($folder)) {
+                mkdir($folder,0755);
+            }
             if (empty($tables)) {
                 throw new Exception("没有选任何备份表");
             }

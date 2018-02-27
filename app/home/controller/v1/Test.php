@@ -8,17 +8,12 @@
 
 namespace app\home\controller\v1;
 
-
-use app\common\controller\BaseController;
-use think\Request;
-use think\Response;
-
+use think\Controller;
 //http://127.0.0.16/v1.Test/index
-class Test extends BaseController
+class Test extends Controller
 {
     function index()
     {
-        $this->request->token();
-        echo 'Welcome To Use <strong>AlphaCMS</strong>_v'.ALPHACMS_VERSION;
+        echo 'Welcome To Use <strong>AlphaCMS</strong>_v' . ALPHACMS_VERSION;
     }
 }

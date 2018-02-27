@@ -21,5 +21,6 @@ function showResponse(res) {
         m_error(res.msg,{
             time:1500
         });
+        LUOCAPTCHA.reset();
     }
 }

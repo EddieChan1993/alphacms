@@ -15,8 +15,13 @@ use app\home\service\OneService;
  * 控制器中不要操作逻辑
  * 127.0.0.15/home/v1.one/change
  */
-class One extends BaseController
+class One extends Base
 {
+    function __construct()
+    {
+        parent::__construct();
+        //用户身份认证逻辑，调用服务
+    }
     public function change()
     {
         $param = [123];
