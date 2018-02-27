@@ -59,6 +59,40 @@
                                 <div class="row">
                                     <div class="col-md-9">
                                         <div class="form-group">
+                                            <label class="col-md-1 control-label"></label>
+                                            <div class="col-md-11 col-xs-12">
+                                                <textarea name="post_content" class="summernote"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-1  control-label">是否通过</label>
+                                            <div class="col-md-11">
+                                                <label class="switch">
+                                                    <input type="checkbox" name="post_status"  checked value="1"/>
+                                                    <span class="help-block"></span>
+                                                </label>
+                                                <span class="help-block">默认正常</span>
+                                            </div></div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label class="col-md-3 control-label">缩略图</label>
+                                            <div class="col-md-9">
+                                                <div class="gallery" >
+                                                    <a class="gallery-item"  href="javascript:void('')" title="Space picture 2" data-gallery>
+                                                        <div style="width: 200px;height:200px"  class="image" >
+                                                            <input name="smeta[thumb]" hidden type="text" id="inp">
+                                                            <img src="__UPLOAD__/admin/common/upload.svg" alt="Space picture 2"/>
+                                                            <ul class="gallery-item-controls">
+                                                                <li onclick="upload_single('inp','posts')"><i class="fa fa-cloud-upload"></i></li>
+                                                                <li onclick="del_pic('inp')"><i class="fa fa-times"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <label class="col-md-3 control-label">上级</label>
                                             <div class="col-md-9">
                                                 <select multiple name="smeta[term_relation][]" class="form-control select">
@@ -81,41 +115,6 @@
                                             <label class="col-md-3 control-label">文章摘要</label>
                                             <div class="col-md-9 col-xs-12">
                                                 <textarea class="form-control" name="post_excerpt" rows="5"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label"></label>
-                                            <div class="col-md-9 col-xs-12">
-                                                <textarea name="post_content" class="summernote"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-3  control-label">是否通过</label>
-                                            <div class="col-md-9">
-                                                <label class="switch">
-                                                    <input type="checkbox" name="post_status"  checked value="1"/>
-                                                    <span class="help-block"></span>
-                                                </label>
-                                                <span class="help-block">默认正常</span>
-                                            </div></div>
-
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-                                            <label class="col-md-3 control-label">缩略图</label>
-                                            <div class="col-md-12">
-                                                <div class="gallery" >
-                                                    <a class="gallery-item"  href="javascript:void('')" title="Space picture 2" data-gallery>
-                                                        <div class="image" >
-                                                            <input name="smeta[thumb]" hidden type="text" id="inp">
-                                                            <img src="__UPLOAD__/admin/common/upload.svg" alt="Space picture 2"/>
-                                                            <ul class="gallery-item-controls">
-                                                                <li onclick="upload_single('inp','posts')"><i class="fa fa-cloud-upload"></i></li>
-                                                                <li onclick="del_pic('inp')"><i class="fa fa-times"></i></li>
-                                                            </ul>
-                                                        </div>
-                                                    </a>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>

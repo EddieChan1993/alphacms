@@ -17,6 +17,7 @@
                             <tr>
                                 <th>图片</th>
                                 <th>大小</th>
+                                <th>存储位置</th>
                                 <th>上传时间</th>
                                 <th>操作者</th>
                                 <th>操作ip</th>
@@ -28,6 +29,7 @@
                             <tr class="del_tr">
                                 <td style="background: url({$v.img_path});background-repeat: no-repeat;background-size: contain"></td>
                                 <td>{$v.img_size}</td>
+                                <td>{$v.type==1?'<span class="label label-success">七牛</span>':'<span class="label label-danger">本地</span>'}</td>
                                 <td>{$v.upload_date|tranTime}</td>
                                 <td>{:get_users($v.user_id)['user_login']}</td>
                                 <td>{$v.ip}</td>
