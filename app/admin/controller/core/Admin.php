@@ -34,7 +34,7 @@ class Admin extends Base
         $validate = new Validate([
             ['user_login', 'require|unique:users|min:5', '登录名称必填|登录名已经存在|登录名最小5个字符'],
             ['user_pass', 'confirm:confirm_pass|different:user_login', '密码和确认密码不一致|密码不能和账号重复'],
-            ['user_email', 'require|email', '邮箱必填|邮箱格式不正确'],
+//            ['user_email', 'require|email', '邮箱必填|邮箱格式不正确'],
         ]);
 
         try {
@@ -93,7 +93,7 @@ class Admin extends Base
         $validate = new Validate([
             ['user_login', 'require|unique:users|min:5', '登录名称必填|登录名已经存在|登录名最小5个字符'],
             ['user_pass', 'confirm:confirm_pass|different:user_login', '密码和确认密码不一致|密码不能和账号重复'],
-            ['user_email', 'email', '邮箱格式不正确'],
+//            ['user_email', 'require|email', '邮箱必填|邮箱格式不正确'],
         ]);
 
         try {
