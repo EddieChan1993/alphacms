@@ -6,6 +6,7 @@ use app\common\controller\BaseController;
 use app\common\service\CurdService;
 use think\Db;
 use think\Exception;
+use think\Request;
 use think\View;
 
 /**
@@ -27,6 +28,11 @@ class Base extends BaseController
     function __construct()
     {
         parent::_initialize();
+        $req = Request::instance();
+        if ($req->baseFile() == "/index.php") {
+            //入口文件index.php禁止访问后台管理系统
+            throw new Exception("非法请求");
+        }
         $comService=new ComService();
         if (!$comService->isLogin()) {
             $this->redirect('admin/core.Login/show_login');

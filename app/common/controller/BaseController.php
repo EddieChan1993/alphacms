@@ -2,6 +2,7 @@
 namespace app\common\controller;
 use think\Config;
 use think\Controller;
+use think\Route;
 
 class BaseController extends Controller
 {
