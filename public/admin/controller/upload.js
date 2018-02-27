@@ -18,7 +18,7 @@ var domain, img_url,url;
 function upload_single(dom,path,type) {
     type=type||'img';
     domain = getRootPath();
-    url = domain + '/admin/core.Upload/show_upload_sigle/dom/'+dom+'/type/'+type+'/path/'+path+'.html';
+    url = domain + '/admin.php/admin/core.Upload/show_upload_sigle/dom/'+dom+'/type/'+type+'/path/'+path+'.html';
 
     layer.open({
         title:'单文件上传',
@@ -38,7 +38,7 @@ function del_pic(dom) {
     domain = getRootPath();
     img_url = $('#' + dom).val();
     if(img_url!='') {
-        url = domain + '/admin/core.Upload/del_sigle_file.html';
+        url = domain + '/admin.php/admin/core.Upload/del_sigle_file.html';
         $.post(url,{
             file_path: img_url
         },function (res) {
