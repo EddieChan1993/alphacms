@@ -103,13 +103,13 @@ class Base extends BaseController
             }
         }
         if (!empty($data['s_date']) && !empty($data['e_date'])) {
-            $conditions['c_time']= ['BETWEEN',[strtotime($data['s_date']),strtotime($data['e_date'])]];
+            $conditions['c_time']= ['BETWEEN',[strtotime($data['s_date']),strtotime($data['e_date'])+86400]];
         }
         if (!empty($data['s_date'])&&empty($data['e_date'])) {
             $conditions['c_time']= ['>=',strtotime($data['s_date'])];
         }
         if (!empty($data['e_date'])&&empty($data['s_date'])) {
-            $conditions['c_time']=['<=',strtotime($data['e_date'])];
+            $conditions['c_time']=['<=',strtotime($data['e_date'])+86400];
         }
         //总个数
         $countNums = Db::name($this->model)
