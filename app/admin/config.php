@@ -14,7 +14,7 @@ return [
         'auth_group' => 'role',      // 角色表
         'auth_group_access' => 'role_user', // 用户-角色关系表
         'auth_rule' => 'menu',       // 权限规则表
-        'auth_user' => 'auth_user',  // 用户信息表
+        'auth_user' => 'users',  // 用户信息表
         'auth_open_id' => [1]        //不需要验证的管理员id
     ],
 

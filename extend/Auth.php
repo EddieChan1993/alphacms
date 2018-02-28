@@ -48,6 +48,12 @@ class Auth extends Model
                         //该菜单是否需要验证
                         if ($authOne['status'] == 1) {
                             //只对没被禁用的菜单进行验证
+                            $userStatus=Db::name($this->_config['auth_user'])
+                                ->where(['id' => $uid])
+                                ->value('user_status');
+                            if ($userStatus===0) {
+                                throw new Exception("操作无效,该管理员已经【被禁用】");
+                            }
                             $this->role_rule_in($uid, $authOne['id'], $authOne['name']);
                         } else {
                             throw new Exception($authOne['name'] . '权限【被暂时禁用】');
@@ -81,8 +87,8 @@ class Auth extends Model
             $rules = explode(',', $group['rules']);
             if (in_array($rule_id, $rules)) {
                 //写入操作日志
-                $mess = $uid . '【操作】' . $rule_name;
-                write_log($mess, 'auth_log');
+                $mess = sprintf("%d操作【%s】",$uid,$rule_name);
+                write_log($mess, 'auth');
                 //拥有该权限
             } else {
                 //该角色不包含该权限
