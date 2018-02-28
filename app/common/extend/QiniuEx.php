@@ -70,7 +70,7 @@ class QiniuEx
         $key = md5(uniqid()) . "." . substr(strrchr($fileName, '.'), 1);
         list($ret, $err) = $uploadMgr->putFile($token, $key, $filePath);
         if ($err != null) {
-            throw new Exception("七牛上传单个图片".$err->message());
+            throw new Exception("七牛上传单个图片失败:".$err->message());
         }
 
         return $ret;
