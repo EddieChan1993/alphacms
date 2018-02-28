@@ -18,7 +18,10 @@ function showResponse(res) {
             window.location.href = res.url;
         })
     }else{
-        LUOCAPTCHA.reset();
+        var open_verify=$("#login_in_form").attr('open_verify');
+        if (open_verify!=1) {
+            LUOCAPTCHA.reset();
+        }
         m_error(res.msg,{
             time:1500
         });

@@ -38,7 +38,7 @@
         <div  class="login-logo animated bounceIn"></div>
         <div  class="login-body ">
             <div class="login-title animated fadeIn"><strong>欢迎使用</strong>, 请登录</div>
-            <form id="login_in_form" action="{:url('admin/core.Login/login_in')}" class="form-horizontal" method="post">
+            <form open_verify="{$Think.config.app_debug}" id="login_in_form" action="{:url('admin/core.Login/login_in')}" class="form-horizontal" method="post">
                 <div class="form-group">
                     <div class="col-md-12">
                         <input name="username" type="text" class="form-control" placeholder="用户名"/>
