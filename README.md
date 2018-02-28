@@ -1,4 +1,9 @@
 > AlphaCMS
+
+## 环境
+- [x] php7+
+- [x] Redis
+
 ## 安装
 确保文件已经删除
 > E:\alphaCMS\data\install.lock
