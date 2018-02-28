@@ -303,7 +303,7 @@ function tranTime($timeInt, $format = 'Y-m-d H:i:s')
                 } else {
                     if ($d < 604800) {//1周内
                         return floor($d / 86400) . '天前';
-                    }else{
+                    } else {
                         if ($d < 2592000) {//1个月内
                             return floor($d / 604800) . '周前';
                         } else {
@@ -326,11 +326,11 @@ function tranTime($timeInt, $format = 'Y-m-d H:i:s')
  * @param $parent_name
  * @return array
  */
-function get_tree_array($data,$parent_name)
+function get_tree_array($data, $parent_name)
 {
 
     $tree = new \Tree();
-    $tree->init($data, ['parentid' =>$parent_name]);
+    $tree->init($data, ['parentid' => $parent_name]);
     $menuList = $tree->get_arraylist($data);
 
     return $menuList;
@@ -345,17 +345,17 @@ function get_tree_array($data,$parent_name)
  * @return array
  * @internal param $data
  */
-function get_child_tree($parent_id,$parent_name='parent_id',$id_name='client_id')
+function get_child_tree($parent_id, $parent_name = 'parent_id', $id_name = 'client_id')
 {
-    $data=Db::name('client')->select();
-    $tree=new \Tree();
+    $data = Db::name('client')->select();
+    $tree = new \Tree();
     $config = [
-        'id'=>$id_name,
+        'id' => $id_name,
         'parentid' => $parent_name
     ];
-    $tree->init($data,$config);
+    $tree->init($data, $config);
     $menuList = get_childs($parent_id);
-    $menuList = $tree->get_arraylist($menuList,$parent_id);
+    $menuList = $tree->get_arraylist($menuList, $parent_id);
     return $menuList;
 }
 
@@ -366,15 +366,15 @@ function get_child_tree($parent_id,$parent_name='parent_id',$id_name='client_id'
  * @param string $id_name
  * @return array
  */
-function get_childs($parent_id,$parent_name='parent_id',$id_name='client_id')
+function get_childs($parent_id, $parent_name = 'parent_id', $id_name = 'client_id')
 {
-    $data=Db::name('client')->select();
-    $tree=new Tree();
+    $data = Db::name('client')->select();
+    $tree = new Tree();
     $config = [
-        'id'=>$id_name,
+        'id' => $id_name,
         'parentid' => $parent_name
     ];
-    $tree->init($data,$config);
+    $tree->init($data, $config);
     $menuList = $tree->get_childs($data, $parent_id);
 
     return $menuList;
@@ -473,12 +473,12 @@ function object2array($object)
  * @param $key 需要获取的key的值
  * @return mixed key的值
  */
-function getAttr($json,$key)
+function getAttr($json, $key)
 {
-    $arr= json_decode($json);
+    $arr = json_decode($json);
     if (!empty($arr->$key)) {
-        return $arr ->$key;
-    }else{
+        return $arr->$key;
+    } else {
         return false;
     }
 }
@@ -521,13 +521,14 @@ function my_sort($arrays, $sort_key, $sort_order = SORT_ASC, $sort_type = SORT_N
  * @param $key
  * @return mixed
  */
-function array_remove($data, $key){
-    if(!array_key_exists($key, $data)){
+function array_remove($data, $key)
+{
+    if (!array_key_exists($key, $data)) {
         return $data;
     }
     $keys = array_keys($data);
     $index = array_search($key, $keys);
-    if($index !== FALSE){
+    if ($index !== FALSE) {
         array_splice($data, $index, 1);
     }
     return $data;
@@ -539,14 +540,15 @@ function array_remove($data, $key){
  * @param $str
  * @return mixed|string
  */
-function userTextEncode($str){
-    if(!is_string($str))return $str;
-    if(!$str || $str=='undefined')return '';
+function userTextEncode($str)
+{
+    if (!is_string($str)) return $str;
+    if (!$str || $str == 'undefined') return '';
 
     $text = json_encode($str); //暴露出unicode
-    $text = preg_replace_callback("/(\\\u[ed][0-9a-f]{3})/i",function($str){
+    $text = preg_replace_callback("/(\\\u[ed][0-9a-f]{3})/i", function ($str) {
         return addslashes($str[0]);
-    },$text); //将emoji的unicode留下，其他不动，这里的正则比原答案增加了d，因为我发现我很多emoji实际上是\ud开头的，反而暂时没发现有\ue开头。
+    }, $text); //将emoji的unicode留下，其他不动，这里的正则比原答案增加了d，因为我发现我很多emoji实际上是\ud开头的，反而暂时没发现有\ue开头。
     return json_decode($text);
 }
 
@@ -555,11 +557,12 @@ function userTextEncode($str){
  * @param $str
  * @return mixed
  */
-function userTextDecode($str){
+function userTextDecode($str)
+{
     $text = json_encode($str); //暴露出unicode
-    $text = preg_replace_callback('/\\\\\\\\/i',function($str){
+    $text = preg_replace_callback('/\\\\\\\\/i', function ($str) {
         return '\\';
-    },$text); //将两条斜杠变成一条，其他不动
+    }, $text); //将两条斜杠变成一条，其他不动
     return json_decode($text);
 }
 
@@ -573,12 +576,12 @@ function userTextDecode($str){
 function upload_more($name, $pathName)
 {
     $files = request()->file($name);
-    foreach ($files as $k=>$file) {
+    foreach ($files as $k => $file) {
         if ($k <= 3) {
-            $info = $file->move(ROOT_PATH . 'data' . DS . 'upload/'.$pathName);
+            $info = $file->move(ROOT_PATH . 'data' . DS . 'upload/' . $pathName);
             if ($info) {
-                $imgJson[$k] =$info->getSaveName();
-            }else{
+                $imgJson[$k] = $info->getSaveName();
+            } else {
                 echo $file->getError();
             }
         }
@@ -595,12 +598,12 @@ function upload_more($name, $pathName)
  */
 function upload_sigle($name, $pathName)
 {
-    $file=request()->file($name);
-    $info = $file->move('upload/'.$pathName);
+    $file = request()->file($name);
+    $info = $file->move('upload/' . $pathName);
 
     if ($info) {
-        $drivePath= $info->getSaveName();
-    }else{
+        $drivePath = $info->getSaveName();
+    } else {
         $drivePath = '';
     }
     return $drivePath;
@@ -608,10 +611,10 @@ function upload_sigle($name, $pathName)
 
 /**
  * curl的post和get请求
- * @param $url（请求地址）
- * @param string $type(请求类型，post，get，默认为get)
- * @param string $res（返回json格式）
- * @param string $arr（传入参数）
+ * @param $url （请求地址）
+ * @param string $type (请求类型，post，get，默认为get)
+ * @param string $res （返回json格式）
+ * @param string $arr （传入参数）
  * @return mixed
  */
 function http_curl($url, $type = 'get', $res = 'json', $arr = '')
@@ -635,7 +638,7 @@ function http_curl($url, $type = 'get', $res = 'json', $arr = '')
     curl_close($ch);
     if ($res == 'json') {
         return json_decode($output, true);
-    }else{
+    } else {
         return $output;
     }
 }
@@ -647,24 +650,25 @@ function http_curl($url, $type = 'get', $res = 'json', $arr = '')
  * @param bool
  * @return array
  */
-function db_get_tables($prefix=false)
+function db_get_tables($prefix = false)
 {
-    $db_prefix =config('database.prefix');
-    $list  = Db::query('SHOW TABLE STATUS FROM '.config('database.database'));
-    $list  = array_map('array_change_key_case', $list);
+    $db_prefix = config('database.prefix');
+    $list = Db::query('SHOW TABLE STATUS FROM ' . config('database.database'));
+    $list = array_map('array_change_key_case', $list);
     $tables = array();
-    foreach($list as $k=>$v){
-        if(empty($prefix)){
-            if(stripos($v['name'],strtolower(config('database.prefix')))===0){
+    foreach ($list as $k => $v) {
+        if (empty($prefix)) {
+            if (stripos($v['name'], strtolower(config('database.prefix'))) === 0) {
                 $tables [] = strtolower(substr($v['name'], strlen($db_prefix)));
             }
-        }else{
+        } else {
             $tables [] = strtolower($v['name']);
         }
 
     }
     return $tables;
 }
+
 /**
  * 返回数据表的sql
  *
@@ -675,7 +679,7 @@ function db_get_tables($prefix=false)
  */
 function db_get_insert_sqls($table)
 {
-    $db_prefix =config('database.prefix');
+    $db_prefix = config('database.prefix');
     $db_prefix_re = preg_quote($db_prefix);
     $db_prefix_holder = db_get_db_prefix_holder();
     $export_sqls = array();
@@ -694,7 +698,7 @@ function db_get_insert_sqls($table)
                 foreach ($v as &$vv) {
                     //TODO mysql_real_escape_string替换方法
                     //$vv = "'" . @mysql_real_escape_string($vv) . "'";
-                    $vv = "'" . addslashes(str_replace(array("\r","\n"),array('\r','\n'),$vv)) . "'";
+                    $vv = "'" . addslashes(str_replace(array("\r", "\n"), array('\r', '\n'), $vv)) . "'";
                 }
                 $data_values [] = '(' . join(',', $v) . ')';
             }
@@ -705,6 +709,7 @@ function db_get_insert_sqls($table)
     }
     return join(";\n", $export_sqls) . ";";
 }
+
 /**
  * 检测当前数据库中是否含指定表
  *
@@ -717,6 +722,7 @@ function db_is_valid_table_name($table)
 {
     return in_array($table, db_get_tables());
 }
+
 /**
  * 不检测表前缀,恢复数据库
  *
@@ -725,10 +731,10 @@ function db_is_valid_table_name($table)
  * @param $file
  * @param $prefix
  */
-function db_restore_file($file,$prefix='')
+function db_restore_file($file, $prefix = '')
 {
-    $prefix=$prefix?:db_get_db_prefix_holder();
-    $db_prefix=config('database.prefix');
+    $prefix = $prefix ?: db_get_db_prefix_holder();
+    $db_prefix = config('database.prefix');
     $sqls = file_get_contents($file);
     $sqls = str_replace($prefix, $db_prefix, $sqls);
     $sqlarr = explode(";\n", $sqls);
@@ -736,6 +742,7 @@ function db_restore_file($file,$prefix='')
         Db::execute($sql);
     }
 }
+
 /**
  * 返回表前缀替代符
  * @author rainfer <81818832@qq.com>
@@ -747,6 +754,7 @@ function db_get_db_prefix_holder()
 //    return '<--db-prefix-->';
     return config('database.prefix');
 }
+
 /**
  * 强制下载
  * @author rainfer <81818832@qq.com>
@@ -765,22 +773,19 @@ function force_download_content($filename, $content)
     echo $content;
     exit ();
 }
-//写日志
-function write_log($content='',$log_file_name)
-{
-    if ($log_file_name) {
-        if (!empty($content)) {
-            $content = '内容:'. $content;
-            $content.=' 时间:'.date('Ymd H:i:s', time());
-            $content.=' 操作员:'.get_users(open_secret(cookie('UID')))['user_login'];
-            $content.=' 操作ip:'.request()->ip()."\n";
 
-            $TxtFileName = config('log.path'). $log_file_name . ".txt";//创建文章
-            $TxtRes = fopen($TxtFileName, "a");
-            fwrite($TxtRes,$content);
-        }
-    }else{
-        lang('日志文件名不能为空');
+//写日志
+function write_log(string $content = '', $log_file_name)
+{
+    if (empty($log_file_name)) {
+        throw new Exception("创建日志文件名为空");
+    }
+    if (!empty($content)) {
+        $content = sprintf("IP:%s\nTime:%s\nContent:\n%s\n", request()->ip(), date("Y-m-d H:i:s", time()), $content);
+        $content .= "---------------------------------------------------------------\n";
+        $TxtFileName = config('log.path') . $log_file_name . ".log";//创建文章
+        $TxtRes = fopen($TxtFileName, "a");
+        fwrite($TxtRes, $content);
     }
 }
 
@@ -789,23 +794,24 @@ function write_log($content='',$log_file_name)
  * @param $size filesize($filePath)
  * @return string
  */
-function getFileSize($size){
-    if($size >= pow(2, 40)){
-        $size=round($size/pow(2, 40), 3);
-        $dw="TB";
-    }else if($size >= pow(2, 30)){
-        $size=round($size/pow(2, 30), 3);
-        $dw="GB";
-    }else if($size >= pow(2, 20)){
-        $size=round($size/pow(2, 20), 3);
-        $dw="MB";
-    }else if($size >= pow(2, 10)){
-        $size=round($size/pow(2, 10), 3);
-        $dw="KB";
-    }else {
-        $dw="Bytes";
+function getFileSize($size)
+{
+    if ($size >= pow(2, 40)) {
+        $size = round($size / pow(2, 40), 3);
+        $dw = "TB";
+    } else if ($size >= pow(2, 30)) {
+        $size = round($size / pow(2, 30), 3);
+        $dw = "GB";
+    } else if ($size >= pow(2, 20)) {
+        $size = round($size / pow(2, 20), 3);
+        $dw = "MB";
+    } else if ($size >= pow(2, 10)) {
+        $size = round($size / pow(2, 10), 3);
+        $dw = "KB";
+    } else {
+        $dw = "Bytes";
     }
-    return $size.$dw;
+    return $size . $dw;
 
 }
 
@@ -815,7 +821,7 @@ function getFileSize($size){
  * @param $msg
  * @return array|string
  */
-function send_sms($tel,$msg)
+function send_sms($tel, $msg)
 {
     $map = [
         'api_key' => plugins_value('msn', 'api_key'),
@@ -824,14 +830,14 @@ function send_sms($tel,$msg)
     $sign = plugins_value('msn', 'sign');
     $sms = new Sms($map);
     //send 单发接口，签名需在后台报备
-    $res = $sms->send($tel, $msg.'【'.$sign.'】');
-    if( $res ){
-        if( isset( $res['error'] ) &&  $res['error'] == 0 ){
+    $res = $sms->send($tel, $msg . '【' . $sign . '】');
+    if ($res) {
+        if (isset($res['error']) && $res['error'] == 0) {
             return 'success';
-        }else{
-            return 'failed,code:'.$res['error'].',msg:'.$res['msg'];
+        } else {
+            return 'failed,code:' . $res['error'] . ',msg:' . $res['msg'];
         }
-    }else{
+    } else {
         return $sms->last_error();
     }
 }
@@ -844,21 +850,21 @@ function send_sms($tel,$msg)
  * @return string
  * @throws Exception
  */
-function plugins_value($wid_key,$wid_name)
+function plugins_value($wid_key, $wid_name)
 {
     $widgets = Db::name('widgets')
-        ->where('wid_key',$wid_key)
+        ->where('wid_key', $wid_key)
         ->value('wid_params');
 
     if (empty($widgets)) {
         throw new Exception($wid_key . "插件不存在");
     }
     $params_arr = explode('|', $widgets);
-    foreach ($params_arr as $k=>$v){
-        $chids_arr=explode('=',$v);
+    foreach ($params_arr as $k => $v) {
+        $chids_arr = explode('=', $v);
         foreach ($chids_arr as $k) {
             if ($k == $wid_name) {
-                return  $chids_arr[1];
+                return $chids_arr[1];
             }
         }
     }
@@ -871,17 +877,18 @@ function plugins_value($wid_key,$wid_name)
  * @param $user_id
  * @return string
  */
-function createCode($user_id) {
+function createCode($user_id)
+{
     static $source_string = 'E5FCDG3HQA4B1NOPIJ2RSTUV67MWX89KLYZ';
     $num = $user_id;
     $code = '';
-    while ( $num > 0) {
+    while ($num > 0) {
         $mod = $num % 35;
         $num = ($num - $mod) / 35;
-        $code = $source_string[$mod].$code;
+        $code = $source_string[$mod] . $code;
     }
-    if(empty($code[3]))
-        $code = str_pad($code,4,'0',STR_PAD_LEFT);
+    if (empty($code[3]))
+        $code = str_pad($code, 4, '0', STR_PAD_LEFT);
     return $code;
 }
 
@@ -890,14 +897,15 @@ function createCode($user_id) {
  * @param $code
  * @return bool|int
  */
-function decode($code) {
+function decode($code)
+{
     static $source_string = 'E5FCDG3HQA4B1NOPIJ2RSTUV67MWX89KLYZ';
     if (strrpos($code, '0') !== false)
-        $code = substr($code, strrpos($code, '0')+1);
+        $code = substr($code, strrpos($code, '0') + 1);
     $len = strlen($code);
     $code = strrev($code);
     $num = 0;
-    for ($i=0; $i < $len; $i++) {
+    for ($i = 0; $i < $len; $i++) {
         $num += strpos($source_string, $code[$i]) * pow(35, $i);
     }
     return $num;
