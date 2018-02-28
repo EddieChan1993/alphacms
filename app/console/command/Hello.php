@@ -19,7 +19,7 @@ class Hello extends Command
 
     protected function execute(Input $input, Output $output)
     {
-        Log::write("aaa");
+        write_log("aaaaa", 'hello');
         //所有逻辑
         $output->write("Hello World");
     }

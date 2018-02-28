@@ -64,7 +64,7 @@ class LoginService extends BaseService
                 session('TOKEN_LOGIN', data_signature($data_sign));
                 $flag = true;
                 $mess = $users['user_login'] . "第" . ($users['user_hits'] + 1) . "次登录";
-                write_log($mess, 'admin_log');
+                write_log($mess, 'login');
             } else {
                 throw new Exception('用户登陆更新失败');
             }
