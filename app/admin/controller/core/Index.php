@@ -1,6 +1,8 @@
 <?php
 namespace app\admin\controller\core;
 
+use app\admin\service\core\AuthService;
+
 class Index extends Base
 {
     public function index()
@@ -9,7 +11,7 @@ class Index extends Base
         $role_name = get_role(open_secret(cookie('UID')));
         $role_nav = get_role_nav(open_secret(cookie('UID')));
 
-        $menuAuth = new \Auth();
+        $menuAuth = new AuthService();
         $menuAuth=$menuAuth->get_auth_menu(open_secret(cookie('UID')));
         $menuAuth = my_sort($menuAuth, 'listorder', SORT_DESC);
 
