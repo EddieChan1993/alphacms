@@ -88,12 +88,12 @@ class AuthService extends BaseService
             $rules = explode(',', $group['rules']);
             if (in_array($rule_id, $rules)) {
                 //写入操作日志
-                $mess = sprintf("%d操作【%s】", $uid, $rule_name);
+                $mess = sprintf("ID:%d操作【%s】", $uid, $rule_name);
                 write_log($mess, 'auth');
                 //拥有该权限
             } else {
                 //该角色不包含该权限
-                throw new Exception('无权操作【' . $rule_name . '】权限');
+                throw new Exception('该角色无权操作【' . $rule_name . '】权限');
             }
         } else {
             //该角色所有权限被禁
