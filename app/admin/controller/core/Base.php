@@ -38,7 +38,7 @@ class Base extends BaseController
             $this->redirect('admin/core.Login/show_login');
         }
         if (!$comService->verifyAuth()) {
-            $this->error($comService->getErr());
+            $this->error(ComService::getErr());
         }
     }
     /**

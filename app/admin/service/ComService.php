@@ -1,5 +1,6 @@
 <?php
 namespace app\admin\service;
+use app\admin\service\core\AuthService;
 use app\common\service\BaseService;
 use Exception;
 
@@ -47,10 +48,8 @@ class ComService extends BaseService
     {
         $flag = false;
         try{
-            $auth = new \Auth();
-            if (!$auth->check(open_secret(cookie('UID')))) {
-                throw new Exception($auth->getError());
-            }
+            $auth = new AuthService();
+            $auth->check(open_secret(cookie('UID')));
             $flag = true;
         }catch (Exception $e){
             self::setErr($e);
