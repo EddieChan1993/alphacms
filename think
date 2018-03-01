@@ -11,5 +11,7 @@ define('RUNTIME_PATH', ROOT . 'data/runtime/');
 
 define('MODULE', 'console');
 
+ define('LOG_PATH', RUNTIME_PATH . 'log/console/');
+
 // 加载框架引导文件
 require './thinkphp/console.php';

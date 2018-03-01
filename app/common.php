@@ -781,9 +781,14 @@ function write_log(string $content = '', $log_file_name)
         throw new Exception("创建日志文件名为空");
     }
     if (!empty($content)) {
+        $folder = config('log.path');
+        $TxtFileName = $folder . $log_file_name . ".log";//创建文章
+
+        if (!is_dir($folder)) {
+            mkdir($folder,0755);
+        }
         $content = sprintf("IP:%s\nTime:%s\nContent:\n%s\n", request()->ip(), date("Y-m-d H:i:s", time()), $content);
         $content .= "---------------------------------------------------------------\n";
-        $TxtFileName = config('log.path') . $log_file_name . ".log";//创建文章
         $TxtRes = fopen($TxtFileName, "a");
         fwrite($TxtRes, $content);
     }
