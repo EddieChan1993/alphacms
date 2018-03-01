@@ -93,7 +93,7 @@ class AuthService extends BaseService
                 //拥有该权限
             } else {
                 //该角色不包含该权限
-                throw new Exception('该角色无权操作【' . $rule_name . '】权限');
+                throw new Exception('无权操作【' . $rule_name . '】权限');
             }
         } else {
             //该角色所有权限被禁
