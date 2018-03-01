@@ -1,6 +1,7 @@
 ##ignore this file##
 /data/runtime/
 /data/backup/
+/public/upload/avatar/
 /data/conf/db.php
 /data/install.lock
 /.idea/
