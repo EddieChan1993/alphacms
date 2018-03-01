@@ -21,6 +21,9 @@ class Hello extends Command
     {
         write_log("aaaaa", 'hello');
         //所有逻辑
+        $str=strlen("ak=YwBMfAjdDqGQMWrwWgQrkHoES8h_sfQ4oJT7esdG|sk=b-laMNJSLbOyGj-W7qfyFOGWEtvinnaeOLZtAs2-|bucket=alphacms|cdn=p2otxz81j.bkt.clouddn.com");
+
+        $output->write($str);
         $output->write("Hello World");
     }
 
