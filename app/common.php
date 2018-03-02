@@ -775,7 +775,7 @@ function force_download_content($filename, $content)
 }
 
 //写日志
-function write_log(string $content = '', $log_file_name)
+function write_log($content = '', $log_file_name)
 {
     if (empty($log_file_name)) {
         throw new Exception("创建日志文件名为空");
