@@ -297,9 +297,9 @@ CREATE TABLE IF NOT EXISTS `edd_test` (
 `id` int(11) NOT NULL AUTO_INCREMENT,
 `type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0-one 1-two 2-three',
 `name` varchar(8) DEFAULT NULL,
-`c_time` INT (11) NOT NULL COMMENT '创建时间',
-`u_time` INT (11) NOT NULL COMMENT '编辑时间',
-`d_time` INT (11) NOT NULL COMMENT '软删除',
+`c_time` INT (11) DEFAULT '0' COMMENT '创建时间',
+`u_time` INT (11) DEFAULT '0' COMMENT '编辑时间',
+`d_time` INT (11) DEFAULT '0' COMMENT '软删除',
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 COMMENT='模板表,其余表按这张表字段编写' AUTO_INCREMENT=18 ;
 
