@@ -41,34 +41,6 @@ function del_role_log($user_id, $role_id)
     }
     return 'ok';
 }
-
-/**
- * 添加图片日志
- * @param $path
- * @param $type
- * @param string $fileSize
- * @throws Exception
- */
-function add_img_db($path,$type,$fileSize="")
-{
-    if ($type == 0) {
-        $filePath = ".".$path;
-        $fileSize = filesize($filePath);
-    }
-    $map = [
-        'upload_date'=>time(),
-        'img_size' => getFileSize($fileSize),
-        'ip'=>request()->ip(),
-        'user_id' => open_secret(cookie('UID')),
-        'img_path'=>$path,
-        'type'=>$type,
-    ];
-    $res=Db::name('imgs')->insert($map);
-    if (!$res) {
-        throw new Exception("图片插入日志错误");
-    }
-}
-
 /**
  * 删除图片日志
  * @param $path
