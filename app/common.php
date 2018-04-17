@@ -869,7 +869,7 @@ function plugins_value($wid_key, $wid_name)
         $chids_arr = explode('=', $v);
         foreach ($chids_arr as $k) {
             if ($k == $wid_name) {
-                return $chids_arr[1];
+                return trim($chids_arr[1]);
             }
         }
     }
@@ -927,5 +927,31 @@ function is_installed()
         $cmfIsInstalled = file_exists(ROOT . 'data/install.lock');
     }
     return $cmfIsInstalled;
+}
+/**
+ * 添加图片日志
+ * @param $path
+ * @param $type
+ * @param string $fileSize
+ * @throws Exception
+ */
+function add_img_db($path,$type,$fileSize="")
+{
+    if ($type == 0) {
+        $filePath = ".".$path;
+        $fileSize = filesize($filePath);
+    }
+    $map = [
+        'upload_date'=>time(),
+        'img_size' => getFileSize($fileSize),
+        'ip'=>request()->ip(),
+        'user_id' => open_secret(cookie('UID')),
+        'img_path'=>$path,
+        'type'=>$type,
+    ];
+    $res=Db::name('imgs')->insert($map);
+    if (!$res) {
+        throw new Exception("图片插入日志错误");
+    }
 }
 /*==========================================================extra=====================================================*/
