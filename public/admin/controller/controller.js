@@ -96,7 +96,7 @@ function editResponse(res) {
             time:500
         },function () {
             parent.layer.close(index);
-            window.location.href=res.url
+            parent.window.location.reload()
         })
     }else{
         m_error(res.msg);
