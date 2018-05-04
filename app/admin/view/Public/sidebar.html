@@ -31,7 +31,7 @@
                              <li><a href="#"><span class="{$v1.icon}"></span>{$v1.name}</a>
                                 <ul>
                                     {foreach name='v1.child' item='v2'}
-                                    <li  class="{in name='$v1.id' value=':menu_nav_list()' }active{/in} active_li"><a href="#" data-url="{:url($v['module'].'/'.$v['controller'].'/'.$v['method'])}" onclick="turn_url(this)"><span class="{$v2.icon}"></span>{$v2.name}</a></li>
+                                    <li  class="{in name='$v2.id' value=':menu_nav_list()' }active{/in} active_li"><a href="#" data-url="{:url($v2['module'].'/'.$v2['controller'].'/'.$v2['method'])}" onclick="turn_url(this)"><span class="{$v2.icon}"></span>{$v2.name}</a></li>
                                     {/foreach}
                                 </ul>
                              </li>

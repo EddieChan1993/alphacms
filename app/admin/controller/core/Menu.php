@@ -40,8 +40,8 @@ class Menu extends Base
         ];
 
         if (input('?menu_id')) {
-            $menu_map['menuChild'] =input('menu_id') ;
-        }
+        $menu_map['menuChild'] =input('menu_id') ;
+    }
         return view('core/menu/home_page',$menu_map);
     }
 

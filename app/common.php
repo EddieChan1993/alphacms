@@ -31,7 +31,7 @@ function data_signature($data = [])
 }
 
 /**
- * 所有用到密码的不可逆加密方式
+ * 所有用到密码的不可逆加密方式se
  * @author rainfer <81818832@qq.com>
  * @param string $password
  * @param string $password_salt
